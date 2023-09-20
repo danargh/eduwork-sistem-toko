@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<!-- saved from url=(0023)https://sistemtoko.com/ -->
 <html lang="id" class="">
    <head>
+      <!-- meta data -->
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
       <meta http-equiv="expires" content="Tue, 26 Sep 23 05:55:40 +0700" />
-
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <title>sistemtoko.com, Aplikasi Termudah untuk mengelola penjualan Offline &amp; Online.</title>
       <meta name="description" content="sistemtoko.com, Aplikasi Termudah untuk mengelola penjualan Offline &amp; Online, Sistemtoko.com terintegrasi dengan website, sistem retail, chat commerce dan beberapa ekspedisi sekaligus" />
@@ -18,11 +16,9 @@
       <meta name="rating" content="general" />
       <meta name="googlebot" content="index, follow, snipet" />
       <meta name="copyright" content="Copyright (c) Sistemtoko.com. All Rights Reserved." />
-
       <meta name="language" content="id" />
       <meta name="geo.country" content="id" />
       <meta name="geo.placename" content="Indonesia" />
-
       <meta property="og:title" content="sistemtoko.com, Aplikasi Termudah untuk mengelola penjualan Offline &amp; Online." />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://sistemtoko.com" />
@@ -30,6 +26,7 @@
       <meta property="og:site_name" content="sistemtoko.com" />
       <meta property="og:description" content="sistemtoko.com, Aplikasi Termudah untuk mengelola penjualan Offline &amp; Online, Sistemtoko.com terintegrasi dengan website, sistem retail, chat commerce dan beberapa ekspedisi sekaligus" />
 
+      <!-- Google fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -39,10 +36,10 @@
       <link rel="shortcut icon" href="https://sistemtoko.com/img/icon.png" type="image/x-icon" />
 
       <!-- Bootstrap core CSS -->
-      <link media="all" type="text/css" rel="stylesheet" href="dist/bootstrap.css" />
+      <link media="all" type="text/css" rel="stylesheet" href="css/bootstrap.css" />
 
       <!-- Custom styles for this template -->
-      <link media="all" type="text/css" rel="stylesheet" href="dist/style.min.css" />
+      <link media="all" type="text/css" rel="stylesheet" href="css/style.min.css" />
 
       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
       <!--[if lt IE 9]>
@@ -50,22 +47,22 @@
          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
 
-      <!-- Bootstrap core JavaScript
-        ================================================== -->
+      <!-- Bootstrap core JavaScript -->
       <!-- Placed at the end of the document so the pages load faster -->
-      <script type="text/javascript" async="" src="dist/js"></script>
-      <script src="dist/2264589656946517" async=""></script>
-      <script async="" src="dist/fbevents.js.download"></script>
-      <script async="" src="dist/analytics.js.download"></script>
-      <script src="dist/jquery.min.js.download"></script>
 
-      <script src="dist/bootstrap.min.js.download"></script>
+      <script type="text/javascript" async="" src="js/js.js"></script>
+      <script src="js/2264589656946517.js" async=""></script>
+      <script async="" src="js/fbevents.js"></script>
+      <script async="" src="js/analytics.js"></script>
+      <script src="js/jquery.min.js"></script>
+
+      <script src="js/bootstrap.min.js"></script>
 
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-      <script src="dist/ie10-viewport-bug-workaround.js.download"></script>
+      <script src="js/ie10-viewport-bug-workaround.js"></script>
+      <script src="js/typed.min.js"></script>
 
-      <script src="dist/typed.min.js.download"></script>
-
+      <!-- Google analytics -->
       <script>
          (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -107,9 +104,9 @@
          fbq('track', 'PageView');
       </script>
       <noscript><img height="1" width="1" style="display: none" src="https://www.facebook.com/tr?id=2264589656946517&ev=PageView&noscript=1" /></noscript>
-      <!-- End Facebook Pixel Code -->
 
-      <script src="dist/OneSignalSDK.js.download" async=""></script>
+      <!-- one signal code -->
+      <script src="js/OneSignalSDK.js" async=""></script>
       <script>
          var OneSignal = window.OneSignal || [];
          OneSignal.push(function () {
@@ -132,107 +129,7 @@
          });
       </script>
 
-      <script src="dist/OneSignalPageSDKES6.js.download" async=""></script>
-   </head>
-   <body class="siskofrontend">
-      <!-- <div style="background: #ec4b4b; color: #fff; font-weight: bold; padding: 5px; text-align: center; "> 
-        Aplikasi ini dalam tahap Beta , Daftar sekarang dan dapatkan Paket PLATINUM Gratis selama versi beta !
-    </div> -->
-
-      <script type="text/javascript">
-         $(function () {
-            $('#typed').typed({
-               strings: [
-                  // "Kasir Toko offline ( comming soon ) ",
-                  'Sistem informasi retail',
-                  'Website E-commerce',
-                  'Facebook Messenger',
-                  'JNE, Pos , Tiki dan logistic lainya',
-               ],
-               typeSpeed: 25,
-               backDelay: 2000,
-               loop: true,
-               contentType: 'text',
-               loopCount: false,
-               callback: function () {
-                  foo();
-               },
-               resetCallback: function () {
-                  newTyped();
-               },
-            });
-
-            $('.reset').click(function () {
-               $('#typed').typed('reset');
-            });
-
-            // #mobile-menu
-            $('#bs-example-navbar-collapse-1 a').click(function (event) {
-               cek = $(this).attr('href');
-               //alert(cek);
-               if (cek != undefined && !$('#mobile-menu').hasClass('collapsed')) {
-                  $('#mobile-menu').click();
-               }
-            });
-         });
-
-         function newTyped() {
-            /* A new typed object */
-         }
-
-         function foo() {
-            console.log('Callback');
-         }
-
-         var $document = $(document),
-            className = 'fix_menu';
-
-         /*$document.scroll(function() 
-        {
-              if ($document.scrollTop() >= 50) 
-              {
-                $('#menu-utama').addClass(className);
-                console.log("add");
-              } 
-              else 
-              {
-                $('#menu-utama').removeClass(className);
-                console.log("remove");
-              }
-              console.log($document.scrollTop());
-        });
-
-        var lastScrollTop = 0;
-        $(window).scroll(function(event)
-        {
-            if ($document.scrollTop() > 60) 
-            {
-               var st = $(this).scrollTop();
-               if (st > lastScrollTop)
-               {
-                    $('#menu-utama').show();
-                   $('#menu-utama').removeClass(className);
-                   // console.log("remove");
-               } 
-               else if (st > 100)
-               {
-                    $('#menu-utama').addClass(className);
-                   // console.log("add");
-               }
-               lastScrollTop = st;
-               // console.log(st);
-            }
-            else
-            {
-                $('#menu-utama').removeClass(className);
-            }
-        });
-        */
-
-         function toRegister(package) {
-            window.location = 'https://sistemtoko.com/register/?package=' + package;
-         }
-      </script>
+      <script src="js/OneSignalPageSDKES6.js" async=""></script>
 
       <style type="text/css">
          .link-style {
@@ -302,9 +199,55 @@
             -o-background-size: cover;
             background-size: cover !important;
          }
-      </style>
 
-      <div class="navigation-menu">
+         #faqAccordion {
+            text-align: left;
+         }
+         .ing {
+            font-size: 30px;
+            text-decoration: none !important;
+         }
+         .question-toggle {
+            cursor: pointer;
+         }
+         #faqAccordion h5 {
+            font-weight: bold;
+            font-size: 25px;
+            margin-bottom: 25px;
+         }
+         .panel-body {
+            font-size: 20px;
+         }
+         .panel-default > .panel-heading {
+            color: #333;
+            background-color: #ffd550;
+            border: #fff solid 1px;
+         }
+         #listfaq {
+            max-width: 500px;
+            text-align: left;
+            margin: 0 auto;
+         }
+         #listfaq li {
+            margin-bottom: 10px;
+         }
+         #faqAccordion .caret {
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 8px solid #000000;
+            float: right;
+            margin-top: 15px;
+         }
+      </style>
+   </head>
+
+   <body class="siskofrontend">
+      <!-- <div style="background: #ec4b4b; color: #fff; font-weight: bold; padding: 5px; text-align: center; "> 
+        Aplikasi ini dalam tahap Beta , Daftar sekarang dan dapatkan Paket PLATINUM Gratis selama versi beta !
+    </div> -->
+
+      <!-- * NAVBAR -->
+      <nav class="navigation-menu">
          <div class="container" style="padding-left: 0; padding-right: 0">
             <div>
                <nav class="navbar navbar-default" role="navigation" style="margin-bottom: 0px" id="menu-utama">
@@ -318,11 +261,11 @@
                         </button>
 
                         <a href="https://api.whatsapp.com/send?phone=6289695101205&amp;text=halo%20sistemtoko.com!" style="padding: 0px; margin-right: 5px; display: none" target="_blank" class="visible-xs">
-                           <img src="dist/wa.png" alt="wa sistemtoko.com" style="height: 40px; margin: 5px; float: right" />
+                           <img src="assets/images/wa.png" alt="wa sistemtoko.com" style="height: 40px; margin: 5px; float: right" />
                         </a>
 
                         <a class="navbar-brand" href="https://sistemtoko.com/">
-                           <img src="dist/logo-kotak-old.png" alt="logo sistemtoko.com" style="float: left; height: 40px; margin: -5px 10px 0 0" />
+                           <img src="assets/images/logo-kotak-old.png" alt="logo sistemtoko.com" style="float: left; height: 40px; margin: -5px 10px 0 0" />
                            <!-- <div class="hidden-xs" style="float: left; margin-top:6px">
                                     { sistemtoko.com }
                                 </div> -->
@@ -384,7 +327,7 @@
                               <a href="https://api.whatsapp.com/send?phone=6289695101205&amp;text=halo%20sistemtoko.com!" style="padding: 0px; margin-right: 5px" target="_blank">
                                  <button type="submit" style="background: none; color: #fff; font-weight: regular; margin-right: 10px" class="btn btn-primary visible-lg visible-md" id="login">
                                     chat :
-                                    <img src="dist/wa.png" height="20px" alt="wa sistemtoko.com" />
+                                    <img src="assets/images/wa.png" height="20px" alt="wa sistemtoko.com" />
                                     0896-9510-1205
                                  </button>
                               </a>
@@ -406,28 +349,28 @@
                </nav>
             </div>
          </div>
-      </div>
+      </nav>
 
-      <div class="socialmedia">
+      <!-- SOCIAL MEDIA -->
+      <aside class="socialmedia">
          <div class="image-sosmed">
             <a href="https://www.facebook.com/sistemtoko/" target="_blank">
-               <img src="dist/sosmed-fb.png" alt="facebook sistemtoko.com" />
+               <img src="assets/images/sosmed-fb.png" alt="facebook sistemtoko.com" />
             </a>
          </div>
          <div class="clear"></div>
          <div class="clear"></div>
          <div class="image-sosmed">
             <a href="https://www.instagram.com/sistemtoko.com" target="_blank">
-               <img src="dist/sosmed-instagram.png" alt="instagram sistemtoko.com" />
+               <img src="assets/images/sosmed-instagram.png" alt="instagram sistemtoko.com" />
             </a>
          </div>
-      </div>
+      </aside>
 
-      <!-- Homepage -->
-
-      <div class="jumbotron" id="main-container">
+      <!-- HERO LANDING PAGE -->
+      <section class="jumbotron" id="main-container">
          <div class="jumbotron_2">
-            <div class="container" style="width: 1440px; margin-right: auto; margin-left: auto; background-image: url(dist/bg-city.png); background-repeat: no-repeat; background-position: bottom; background-size: contain">
+            <div class="container" style="width: 1440px; margin-right: auto; margin-left: auto; background-image: url(assets/images/bg-city.png); background-repeat: no-repeat; background-position: bottom; background-size: contain">
                <div class="container" style="padding-top: 100px; padding-left: 0; padding-right: 0">
                   <div class="row" style="padding-top: 0px">
                      <div class="col-md-10 col-md-offset-1">
@@ -446,7 +389,7 @@
                         </div>
                      </div>
                      <div class="col-md-12 text-center" style="text-align: center">
-                        <img src="dist/device-bignew.png" class="device hidden-xs img-responsive" style="margin-bottom: -30px" />
+                        <img src="assets/images/device-bignew.png" class="device hidden-xs img-responsive" style="margin-bottom: -30px" />
                      </div>
                   </div>
                </div>
@@ -456,130 +399,147 @@
             <!-- <img src="https://sistemtoko.com/img/wafe.png"/>  -->
             <!-- </div> -->
          </div>
-      </div>
+      </section>
 
-      <div class="container" id="fiture-container" style="margin-top: 120px; margin-bottom: 120px">
-         <!-- Example row of columns -->
+      <!-- FEATURE SUMMARY -->
+      <section id="fiture-container" style="margin: 120px auto; max-width: 1280px">
          <div class="row bawah-signup" id="fiture-row">
             <div class="heading_row">Aplikasi untuk mengelola Performa Toko Online & Offline Anda dengan mudah, modern, dan terbaru</div>
-            <div class="col-md-3 col-sm-6 col-xs-12 fiture-box-up">
-               <div class="col-xs-12 text-center image_depan" align="center">
-                  <a href="https://sistemtoko.com/#website">
-                     <img src="dist/fitur-1.png" class="img-responsive" alt="modul Sistemtoko" />
-                  </a>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+               <div class="fiture-box-up">
+                  <div class="col-xs-12 text-center image_depan" align="center">
+                     <a href="https://sistemtoko.com/#website">
+                        <img src="assets/images/fitur-1.png" class="img-responsive" alt="modul Sistemtoko" />
+                     </a>
+                  </div>
+                  <div class="col-xs-12" align="center" style="margin-top: 16px">
+                     <div class="fiture-header">Website</div>
+                     <p class="text-future" style="padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Dapatkan website .com anda sendiri yang dapat melayani pembeli secara otomatis selama 24 jam x 7 hari non stop. Terintegrasi realtime dengan data stock</p>
+                     <br />
+                  </div>
+                  <div class="clear"></div>
                </div>
-               <div class="col-xs-12" align="center" style="margin-top: 16px">
-                  <div class="fiture-header">Website</div>
-                  <p class="text-future" style="padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Dapatkan website .com anda sendiri yang dapat melayani pembeli secara otomatis selama 24 jam x 7 hari non stop. Terintegrasi realtime dengan data stock</p>
-                  <br />
-               </div>
-               <div class="clear"></div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 fiture-box-up">
-               <div class="col-xs-12 text-center image_depan" align="center">
-                  <a href="https://sistemtoko.com/#website">
-                     <img src="dist/fitur-2.png" style="min-width: 150px" class="img-responsive" alt="modul Sistemtoko" />
-                  </a>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+               <div class="fiture-box-up">
+                  <div class="col-xs-12 text-center image_depan" align="center">
+                     <a href="https://sistemtoko.com/#website">
+                        <img src="assets/images/fitur-2.png" style="min-width: 150px" class="img-responsive" alt="modul Sistemtoko" />
+                     </a>
+                  </div>
+                  <div class="col-xs-12" align="center" style="margin-top: 16px">
+                     <div class="fiture-header">Aplikasi Android</div>
+                     <p class="text-future" style="padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Dapatkan Aplikasi Mobile Android yang dapat dapat diakses kapanpun di manapun. Serta membantu dalam meningkatkan penjualan produk toko Anda.k</p>
+                     <br />
+                  </div>
+                  <div class="clear"></div>
                </div>
-               <div class="col-xs-12" align="center" style="margin-top: 16px">
-                  <div class="fiture-header">Aplikasi Android</div>
-                  <p class="text-future" style="padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Dapatkan Aplikasi Mobile Android yang dapat dapat diakses kapanpun di manapun. Serta membantu dalam meningkatkan penjualan produk toko Anda.k</p>
-                  <br />
-               </div>
-               <div class="clear"></div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 fiture-box-up">
-               <div class="col-xs-12 text-center image_depan" align="center">
-                  <a href="https://sistemtoko.com/#website">
-                     <img src="dist/fitur-3.png" class="img-responsive" alt="modul Sistemtoko" />
-                  </a>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+               <div class="fiture-box-up">
+                  <div class="col-xs-12 text-center image_depan" align="center">
+                     <a href="https://sistemtoko.com/#website">
+                        <img src="assets/images/fitur-3.png" class="img-responsive" alt="modul Sistemtoko" />
+                     </a>
+                  </div>
+                  <div class="col-xs-12" align="center" style="margin-top: 16px">
+                     <div class="fiture-header">Bantuan Desain</div>
+                     <p class="text-future" style="padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Tim Eduwork siap menerima keinginan desain Anda; bangun identitas bisnis yang unik dan profesional.</p>
+                     <br />
+                  </div>
+                  <div class="clear"></div>
                </div>
-               <div class="col-xs-12" align="center" style="margin-top: 16px">
-                  <div class="fiture-header">Bantuan Desain</div>
-                  <p class="text-future" style="padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Tim Eduwork siap menerima keinginan desain Anda; bangun identitas bisnis yang unik dan profesional.</p>
-                  <br />
-               </div>
-               <div class="clear"></div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 fiture-box-up">
-               <div class="col-xs-12 text-center image_depan" align="center">
-                  <a href="https://sistemtoko.com/#website">
-                     <img src="dist/fitur-4.png" class="img-responsive" alt="modul Sistemtoko" />
-                  </a>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+               <div class="fiture-box-up">
+                  <div class="col-xs-12 text-center image_depan" align="center">
+                     <a href="https://sistemtoko.com/#website">
+                        <img src="assets/images/fitur-4.png" class="img-responsive" alt="modul Sistemtoko" />
+                     </a>
+                  </div>
+                  <div class="col-xs-12" align="center" style="margin-top: 16px">
+                     <div class="fiture-header">Chat Bot</div>
+                     <p class="text-future" style="padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Dapatkan aplikasi widget webchat dengan fitur chatbot yang dapat otomatis merespon chat dari customer dan dapat dipasang di profile instagram.</p>
+                     <br />
+                  </div>
+                  <div class="clear"></div>
                </div>
-               <div class="col-xs-12" align="center" style="margin-top: 16px">
-                  <div class="fiture-header">Chat Bot</div>
-                  <p class="text-future" style="padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Dapatkan aplikasi widget webchat dengan fitur chatbot yang dapat otomatis merespon chat dari customer dan dapat dipasang di profile instagram.</p>
-                  <br />
-               </div>
-               <div class="clear"></div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 fiture-box-up">
-               <div class="col-xs-12 text-center image_depan" align="center">
-                  <a href="https://sistemtoko.com/#website">
-                     <img src="dist/fitur-5.png" class="img-responsive" alt="modul Sistemtoko" />
-                  </a>
-               </div>
-               <div class="col-xs-12" align="center" style="margin-top: 16px">
-                  <div class="fiture-header">Aplikasi Kasir</div>
-                  <p class="text-future" style="padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Aplikasi Kasir yang mendukung toko Anda secara Online maupun Offline. Terintegrasi dengan Sistem Informasi dan Website Anda.</p>
-                  <br />
-               </div>
-               <div class="clear"></div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-12 fiture-box-up">
-               <div class="col-xs-12 text-center image_depan" align="center">
-                  <a href="https://sistemtoko.com/#website">
-                     <img src="dist/fitur-6.png" class="img-responsive" alt="modul Sistemtoko" />
-                  </a>
-               </div>
-               <div class="col-xs-12" align="center" style="margin-top: 16px">
-                  <div class="fiture-header">Sistem Informasi</div>
-                  <p class="text-future" style="padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Dapatkan sistem retail seputar data penjualan, gudang , produk, customer dll. Terintegrasi dengan ongkir dan resi seperti JNE, TIKI ,POS dll.</p>
-                  <br />
-               </div>
-               <div class="clear"></div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 fiture-box-up">
-               <div class="col-xs-12 text-center image_depan" align="center">
-                  <a href="https://sistemtoko.com/#website">
-                     <img src="dist/fitur-7.png" class="img-responsive" alt="modul Sistemtoko" />
-                  </a>
-               </div>
-               <div class="col-xs-12" align="center" style="margin-top: 16px">
-                  <div class="fiture-header">Pelatihan Gratis</div>
-                  <p class="text-future" style="padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Dapatkan pelatihan singkat dengan materi Digital Marketing dan penggunaan website gratis 5x bimbingan pertama.</p>
-                  <br />
-               </div>
-               <div class="clear"></div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 fiture-box-up">
-               <div class="col-xs-12 text-center image_depan" align="center">
-                  <a href="https://sistemtoko.com/#website">
-                     <img src="dist/fitur-8.png" class="img-responsive" alt="modul Sistemtoko" />
-                  </a>
-               </div>
-               <div class="col-xs-12" align="center" style="margin-top: 16px">
-                  <div class="fiture-header">Tim Marketing</div>
-                  <p class="text-future" style="padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Tim Sosial Media Strategist kami siap bantu Anda memulai pemasaran produk secara digital.</p>
-                  <br />
-               </div>
-               <div class="clear"></div>
             </div>
          </div>
-      </div>
+         <div class="row bawah-signup" id="fiture-row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+               <div class="fiture-box-up">
+                  <div class="col-xs-12 text-center image_depan" align="center">
+                     <a href="https://sistemtoko.com/#website">
+                        <img src="assets/images/fitur-5.png" class="img-responsive" alt="modul Sistemtoko" />
+                     </a>
+                  </div>
+                  <div class="col-xs-12" align="center" style="margin-top: 16px">
+                     <div class="fiture-header">Aplikasi Kasir</div>
+                     <p class="text-future" style="padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Aplikasi Kasir yang mendukung toko Anda secara Online maupun Offline. Terintegrasi dengan Sistem Informasi dan Website Anda.</p>
+                     <br />
+                  </div>
+                  <div class="clear"></div>
+               </div>
+            </div>
 
-      <div class="row penjelasan" id="penjelasan-1">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+               <div class="fiture-box-up">
+                  <div class="col-xs-12 text-center image_depan" align="center">
+                     <a href="https://sistemtoko.com/#website">
+                        <img src="assets/images/fitur-6.png" class="img-responsive" alt="modul Sistemtoko" />
+                     </a>
+                  </div>
+                  <div class="col-xs-12" align="center" style="margin-top: 16px">
+                     <div class="fiture-header">Sistem Informasi</div>
+                     <p class="text-future" style="padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Dapatkan sistem retail seputar data penjualan, gudang , produk, customer dll. Terintegrasi dengan ongkir dan resi seperti JNE, TIKI ,POS dll.</p>
+                     <br />
+                  </div>
+                  <div class="clear"></div>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+               <div class="fiture-box-up">
+                  <div class="col-xs-12 text-center image_depan" align="center">
+                     <a href="https://sistemtoko.com/#website">
+                        <img src="assets/images/fitur-7.png" class="img-responsive" alt="modul Sistemtoko" />
+                     </a>
+                  </div>
+                  <div class="col-xs-12" align="center" style="margin-top: 16px">
+                     <div class="fiture-header">Pelatihan Gratis</div>
+                     <p class="text-future" style="padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Dapatkan pelatihan singkat dengan materi Digital Marketing dan penggunaan website gratis 5x bimbingan pertama.</p>
+                     <br />
+                  </div>
+                  <div class="clear"></div>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+               <div class="fiture-box-up">
+                  <div class="col-xs-12 text-center image_depan" align="center">
+                     <a href="https://sistemtoko.com/#website">
+                        <img src="assets/images/fitur-8.png" class="img-responsive" alt="modul Sistemtoko" />
+                     </a>
+                  </div>
+                  <div class="col-xs-12" align="center" style="margin-top: 16px">
+                     <div class="fiture-header">Tim Marketing</div>
+                     <p class="text-future" style="padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Tim Sosial Media Strategist kami siap bantu Anda memulai pemasaran produk secara digital.</p>
+                     <br />
+                  </div>
+                  <div class="clear"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- BREAK SECTION FEATURE -->
+      <section class="row penjelasan" id="penjelasan-1">
          <div class="container">
             <div class="col-md-12" style="padding: 30px 0; text-align: center; color: #fff">
-               <div style="font-size: 30px">Dapat digunakan untuk berbagai jenis usaha</div>
-
+               <div style="font-size: 30px; font-weight: 400">Dapat digunakan untuk berbagai jenis usaha</div>
                <div style="clear: both"></div>
             </div>
          </div>
-      </div>
-
+      </section>
       <div class="row quote hidden-xs" id="jenis" style="background: #636363">
          <div class="col-lg-12" style="position: absolute; position: absolute; z-index: 1; margin: 0; padding: 0; width: 100%">
             <div class="col-lg-4 col-md-12 col-sm-12 boxx">Toko Online</div>
@@ -587,32 +547,31 @@
             <div class="col-lg-4 col-md-12 col-sm-12 boxx">Restaurant</div>
          </div>
 
-         <div class="col-sm-6 col-lg-2" align="left" style="background: url(img/profesi/kurir.jpg) top left; background-size: 700px; background-size: cover; height: 200px"></div>
+         <div class="col-sm-6 col-lg-2" align="left" style="background: url(assets/images/overlay-img1.png) top left; background-size: 700px; background-size: cover; height: 200px"></div>
 
-         <div class="col-sm-6 col-lg-2" align="left" style="background: url(img/profesi/retail2.jpg) top right; background-size: cover; height: 200px"></div>
+         <div class="col-sm-6 col-lg-2" align="left" style="background: url(assets/images/overlay-img2.png) top right; background-size: cover; height: 200px"></div>
 
-         <div class="col-sm-6 col-lg-2" align="left" style="background: url(img/profesi/restaurant.jpg) top right; height: 200px; background-size: cover"></div>
+         <div class="col-sm-6 col-lg-2" align="left" style="background: url(assets/images/overlay-img3.png) top right; height: 200px; background-size: cover"></div>
 
-         <div class="col-sm-6 col-lg-2 hidden-xs" align="left" style="background: url(img/profesi/retail.jpg) top right; height: 200px; background-size: cover"></div>
+         <div class="col-sm-6 col-lg-2 hidden-xs" align="left" style="background: url(assets/images/overlay-img4.png) top right; height: 200px; background-size: cover"></div>
 
-         <div class="col-sm-6 col-lg-2 hidden-xs" align="left" style="background: url(img/profesi/cafe.jpg) top; background-size: 700px; background-size: cover; height: 200px"></div>
+         <div class="col-sm-6 col-lg-2 hidden-xs" align="left" style="background: url(assets/images/overlay-img5.png) top; background-size: 700px; background-size: cover; height: 200px"></div>
 
-         <div class="col-sm-6 col-lg-2 hidden-xs" align="left" style="background: url(img/profesi/koki2.jpg) top; background-size: 700px; background-size: cover; height: 200px"></div>
+         <div class="col-sm-6 col-lg-2 hidden-xs" align="left" style="background: url(assets/images/overlay-img6.png) top; background-size: 700px; background-size: cover; height: 200px"></div>
       </div>
 
+      <!-- SHOW FEATURE WEB TOKO ONLINE -->
       <div class="row quote" id="website" style="padding: 100px 0; background: #fff; max-width: 1280px; margin: auto">
-         <div class="col-sm-4 hidden-xs col-lg-8" align="left" style="background: url(dist/hijj-hero.png) right no-repeat; height: 600px"></div>
-
+         <div class="col-sm-4 hidden-xs col-lg-8" align="left" style="background: url(assets/images/show-feature-toko.png) right no-repeat; height: 600px"></div>
          <div class="col-xs-12 col-sm-8 col-lg-4" align="left">
-            <div class="box_banking" style="margin-top: 20px">
-               <img src="dist/webslide.jpg" class="visible-xs" width="100%" style="margin-bottom: 20px; margin-left: -10px" alt="sistemtoko.com preview" />
-
+            <div class="box_banking" style="margin-top: 20px; padding-left: 32px">
+               <img src="assets/images/show-feature-toko.png" class="visible-xs" width="100%" style="margin-bottom: 20px; margin-left: -10px" alt="sistemtoko.com preview" />
                <div class="header-gray inet-banking">Web Toko Online</div>
                <div class="header-gray" style="font-size: 20px; margin-bottom: 20px">Miliki website anda sendiri</div>
 
                <div class="col-md-12 fiture-box" style="padding: 0 !important">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header"><img src="dist/icons/clock.svg" style="margin-right: 16px" alt="clock-icons" /> Realtime Stock</div>
+                     <div class="fiture-header"><img src="assets/icons/clock.svg" style="margin-right: 16px" alt="clock-icons" /> Realtime Stock</div>
                      <p class="text-future" style="margin-left: 62px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">stock terupdate secara realtime</p>
                   </div>
                   <div style="clear: both"></div>
@@ -620,7 +579,7 @@
 
                <div class="col-md-12 fiture-box" style="padding: 0 !important">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header"><img src="dist/icons/chat.svg" style="margin-right: 16px" alt="chat-icon" />Chatbot</div>
+                     <div class="fiture-header"><img src="assets/icons/chat.svg" style="margin-right: 16px" alt="chat-icon" />Chatbot</div>
                      <p class="text-future" style="margin-left: 62px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Widget chat yang dapat otomatis melayani chatingan dari pembeli</p>
                   </div>
                   <div style="clear: both"></div>
@@ -628,7 +587,7 @@
 
                <div class="col-md-12 fiture-box" style="padding: 0 !important">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header"><img src="dist/icons/cash.svg" style="margin-right: 16px" alt="chat-icon" />Ongkir</div>
+                     <div class="fiture-header"><img src="assets/icons/cash.svg" style="margin-right: 16px" alt="chat-icon" />Ongkir</div>
                      <p class="text-future" style="margin-left: 62px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Terintegrasi dengan layanan ongkir JNE , JNT , POS dll.</p>
                   </div>
                   <div style="clear: both"></div>
@@ -636,7 +595,7 @@
 
                <div class="col-md-12 fiture-box" style="padding: 0 !important">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header"><img src="dist/icons/facebook.svg" style="margin-right: 16px" alt="chat-icon" />FB Pixel</div>
+                     <div class="fiture-header"><img src="assets/icons/facebook.svg" style="margin-right: 16px" alt="chat-icon" />FB Pixel</div>
                      <p class="text-future" style="margin-left: 62px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Dapat di integrasikan dengan FB Pixel , FB Product Catalog</p>
                   </div>
                   <div style="clear: both"></div>
@@ -644,7 +603,7 @@
 
                <div class="col-md-12 fiture-box" style="padding: 0 !important">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header"><img src="dist/icons/chat.svg" style="margin-right: 16px" alt="chat-icon" />Google analytics</div>
+                     <div class="fiture-header"><img src="assets/icons/chat.svg" style="margin-right: 16px" alt="chat-icon" />Google analytics</div>
                      <p class="text-future" style="margin-left: 62px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Analisa performa website anda dengan google analytics</p>
                   </div>
                   <div style="clear: both"></div>
@@ -653,7 +612,7 @@
                <div class="col-md-12 fiture-box" style="padding: 0 !important">
                   <div class="col-md-12 col-sm-12 col-xs-12">
                      <div class="fiture-header">
-                        <a class="btn btn-lg signup" style="font-size: 16px; font-weight: 500" href="http://demo.sistemtoko.com/" target="_blank">Coba Demo Sekarang</a>
+                        <a class="btn btn-lg signup demo-button" style="font-size: 16px; font-weight: 500" href="http://demo.sistemtoko.com/" target="_blank">Coba Demo Sekarang</a>
                      </div>
                   </div>
                   <div style="clear: both"></div>
@@ -662,17 +621,17 @@
          </div>
       </div>
 
+      <!-- SHOW FEATURE CUSTOM WEBSITE -->
       <div class="row quote" id="custom-website" style="padding: 100px 0; background: #fff; max-width: 1280px; margin: auto">
-         <div class="col-sm-6 col-xs-12 col-lg-4" align="left">
+         <div class="col-sm-6 col-xs-12 col-lg-4" style="margin-top: 32px" align="left">
             <div class="box_banking" style="margin-top: 20px">
-               <img src="dist/webslide.jpg" class="visible-xs" width="100%" style="margin-bottom: 20px; margin-left: -10px" alt="sistemtoko.com preview" />
-
+               <img src="assets/images/show-feature-custom-web.png" class="visible-xs" width="100%" style="margin-bottom: 20px; margin-left: -10px" alt="sistemtoko.com preview" />
                <div class="header-gray inet-banking">Custom Website</div>
                <div class="header-gray" style="font-size: 20px; margin-bottom: 20px">Miliki Tampilan Website Sesuai Kebutuhan Anda</div>
 
                <div class="col-md-12 fiture-box" style="padding: 0 !important">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header"><img src="dist/icons/template.svg" style="margin-right: 16px" alt="clock-icons" /> Template Website</div>
+                     <div class="fiture-header"><img src="assets/icons/template.svg" style="margin-right: 16px" alt="clock-icons" /> Template Website</div>
                      <p class="text-future" style="margin-left: 62px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Menyediakan 100+ template website yang dapat anda gunakan gratis sesuai kebutuhan usaha anda</p>
                   </div>
                   <div style="clear: both"></div>
@@ -680,100 +639,112 @@
 
                <div class="col-md-12 fiture-box" style="padding: 0 !important">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header"><img src="dist/icons/custom-web.svg" style="margin-right: 16px" alt="chat-icon" />Custom Website Design</div>
+                     <div class="fiture-header"><img src="assets/icons/custom-web.svg" style="margin-right: 16px" alt="chat-icon" />Custom Website Design</div>
                      <p class="text-future" style="margin-left: 62px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Konsultasikan keinginan dan kebutuhan website anda dengan tim desain kami dan miliki website eksklusif hanya untuk anda</p>
                   </div>
                   <div style="clear: both"></div>
                </div>
             </div>
          </div>
-         <div class="col-sm-6 hidden-xs col-lg-8" align="left" style="background: url(dist/custom-web.png) right no-repeat; height: 600px"></div>
+         <div class="col-sm-6 hidden-xs col-lg-8" align="left" style="background: url(assets/images/show-feature-custom-web.png) right no-repeat; height: 600px"></div>
       </div>
 
+      <!-- BREAK SECTION PROJECT EXAMPLE -->
       <div class="row penjelasan" id="penjelasan-1">
          <div class="container">
             <div class="col-md-12" style="padding: 30px 0; text-align: center; color: #fff">
                <div style="font-size: 30px">Berikut beberapa contoh website dengan tampilan custom</div>
-
                <div style="clear: both"></div>
             </div>
          </div>
       </div>
-
       <div class="row penjelasan" id="other fiture" style="background: #1b1b1b">
          <div class="container" id="list-fitur" style="padding: 20px 0 30px 0">
-            <!-- Example row of columns -->
             <div class="row" id="fiture-row">
-               <div class="col-md-4 col-sm-6 fiture-box">
-                  <h3 class="header-gray" style="text-align: center; margin-top: 0; color: #fff">hos-id.com</h3>
+               <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                  <h3 class="header-gray ex-feature-title">hos-id.com</h3>
                   <a href="http://hos-id.com/" target="_blank">
-                     <img src="dist/porto4.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
+                     <img src="assets/images/porto4.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
                   </a>
                </div>
 
-               <div class="col-md-4 col-sm-6 fiture-box">
-                  <h3 class="header-gray" style="text-align: center; margin-top: 0; color: #fff">Hijjaindonesia.com</h3>
+               <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                  <h3 class="header-gray ex-feature-title">Hijjaindonesia.com</h3>
                   <a href="http://hijja.sistemtoko.com/" target="_blank">
-                     <img src="dist/porto1.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
+                     <img src="assets/images/porto1.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
                   </a>
                </div>
 
-               <div class="col-md-4 col-sm-6 fiture-box">
-                  <h3 class="header-gray" style="text-align: center; margin-top: 0; color: #fff">Halwaindonesia.com</h3>
+               <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                  <h3 class="header-gray ex-feature-title">Halwaindonesia.com</h3>
                   <a href="http://halwaindonesia.com/" target="_blank">
-                     <img src="dist/porto5.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
+                     <img src="assets/images/porto5.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
+                  </a>
+               </div>
+
+               <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                  <h3 class="header-gray ex-feature-title">Hijjaindonesia.com</h3>
+                  <a href="http://hijja.sistemtoko.com/" target="_blank">
+                     <img src="assets/images/porto1.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
+                  </a>
+               </div>
+
+               <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                  <h3 class="header-gray ex-feature-title">Halwaindonesia.com</h3>
+                  <a href="http://halwaindonesia.com/" target="_blank">
+                     <img src="assets/images/porto5.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
+                  </a>
+               </div>
+
+               <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                  <h3 class="header-gray ex-feature-title">hos-id.com</h3>
+                  <a href="http://hos-id.com/" target="_blank">
+                     <img src="assets/images/porto4.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
                   </a>
                </div>
             </div>
          </div>
       </div>
 
-      <div class="row quote" id="android" style="padding: 100px 0; background: #fff; max-width: 1280px; margin: auto">
-         <div class="col-sm-4 hidden-xs col-lg-8" align="left" style="background: url(dist/android-hero.png) right no-repeat; height: 600px"></div>
+      <!-- FEATURE SHOW ANDROID CUSTOM -->
+      <section class="row quote" id="android" style="padding: 100px 0; background: #fff; max-width: 1280px; margin: auto">
+         <div class="col-sm-4 hidden-xs col-lg-8" align="left" style="background: url(assets/images/show-feature-android.png) right no-repeat; height: 600px"></div>
 
-         <div class="col-xs-12 col-sm-8 col-lg-4" align="left">
+         <div class="col-xs-12 col-sm-8 col-lg-4" style="margin-top: 32px; padding-left: 48px" align="left">
             <div class="box_banking" style="margin-top: 20px">
-               <img src="dist/webslide.jpg" class="visible-xs" width="100%" style="margin-bottom: 20px; margin-left: -10px" alt="sistemtoko.com preview" />
+               <img src="assets/images/show-feature-android.png" class="visible-xs" width="100%" style="margin-bottom: 20px; margin-left: -10px" alt="sistemtoko.com preview" />
 
                <div class="header-gray inet-banking">Android<span style="font-size: 30px">.beta</span></div>
                <div class="header-gray" style="font-size: 20px; margin-bottom: 20px">Miliki aplikasi Android di playstore</div>
 
                <div class="col-md-12 fiture-box" style="padding: 0 !important">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header"><img src="dist/icons/clock.svg" style="margin-right: 16px" alt="clock-icons" /> Realtime Stock</div>
-                     <p class="text-future" style="margin-left: 62px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">stock terupdate secara realtime</p>
+                     <div class="fiture-header"><img src="assets/icons/realtime-stock.svg" style="margin-right: 16px" alt="clock-icons" /> Realtime Stock</div>
+                     <p class="text-future" style="margin-left: 62px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Stok terupdate secara realtime</p>
                   </div>
                   <div style="clear: both"></div>
                </div>
 
                <div class="col-md-12 fiture-box" style="padding: 0 !important">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header"><img src="dist/icons/chat.svg" style="margin-right: 16px" alt="chat-icon" />Chatbot</div>
-                     <p class="text-future" style="margin-left: 62px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Widget chat yang dapat otomatis melayani chatingan dari pembeli</p>
+                     <div class="fiture-header"><img src="assets/icons/history-pesanan.svg" style="margin-right: 16px" alt="chat-icon" />History Pesanan</div>
+                     <p class="text-future" style="margin-left: 62px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Mendapatkan history pesanan yang tersimpan pada aplikasi</p>
                   </div>
                   <div style="clear: both"></div>
                </div>
 
                <div class="col-md-12 fiture-box" style="padding: 0 !important">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header"><img src="dist/icons/cash.svg" style="margin-right: 16px" alt="chat-icon" />Ongkir</div>
-                     <p class="text-future" style="margin-left: 62px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Terintegrasi dengan layanan ongkir JNE , JNT , POS dll.</p>
+                     <div class="fiture-header"><img src="assets/icons/integrasi.svg" style="margin-right: 16px" alt="chat-icon" />Terintegrasi</div>
+                     <p class="text-future" style="margin-left: 62px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Monitoring status pesanan Anda secara realtime</p>
                   </div>
                   <div style="clear: both"></div>
                </div>
 
                <div class="col-md-12 fiture-box" style="padding: 0 !important">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header"><img src="dist/icons/facebook.svg" style="margin-right: 16px" alt="chat-icon" />FB Pixel</div>
-                     <p class="text-future" style="margin-left: 62px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Dapat di integrasikan dengan FB Pixel , FB Product Catalog</p>
-                  </div>
-                  <div style="clear: both"></div>
-               </div>
-
-               <div class="col-md-12 fiture-box" style="padding: 0 !important">
-                  <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header"><img src="dist/icons/chat.svg" style="margin-right: 16px" alt="chat-icon" />Google analytics</div>
-                     <p class="text-future" style="margin-left: 62px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Analisa performa website anda dengan google analytics</p>
+                     <div class="fiture-header"><img src="assets/icons/status-order.svg" style="margin-right: 16px" alt="chat-icon" />Status Order</div>
+                     <p class="text-future" style="margin-left: 62px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Update stock secara realtime</p>
                   </div>
                   <div style="clear: both"></div>
                </div>
@@ -781,316 +752,355 @@
                <div class="col-md-12 fiture-box" style="padding: 0 !important">
                   <div class="col-md-12 col-sm-12 col-xs-12">
                      <div class="fiture-header">
-                        <a class="btn btn-lg signup" style="font-size: 16px; font-weight: 500" href="http://demo.sistemtoko.com/" target="_blank">Coba Demo Sekarang</a>
+                        <a class="btn btn-lg signup demo-button" style="font-size: 16px; font-weight: 500" href="https://play.google.com/store/apps/details?id=com.sistemtoko.nooraia" target="_blank">Demo Sekarang</a>
                      </div>
                   </div>
                   <div style="clear: both"></div>
                </div>
             </div>
          </div>
-      </div>
+      </section>
 
-      <div class="row penjelasan" id="penjelasan-1">
+      <!-- BREAK SECTION CONTOH CUSTOM ANDROID -->
+      <section class="row penjelasan" id="penjelasan-1">
          <div class="container">
             <div class="col-md-12" style="padding: 30px 0; text-align: center; color: #fff">
-               <div style="font-size: 30px">Berikut beberapa contoh aplikasi android di playstore</div>
-
+               <div style="font-size: 30px">Berikut beberapa contoh Aplikasi Android dengan tampilan custom</div>
                <div style="clear: both"></div>
             </div>
          </div>
-      </div>
-
+      </section>
       <div class="row penjelasan" id="other fiture" style="background: #1b1b1b">
          <div class="container" id="list-fitur" style="padding: 20px 0 30px 0">
-            <!-- Example row of columns -->
             <div class="row" id="fiture-row">
-               <div class="col-md-4 col-sm-6 fiture-box">
-                  <h3 class="header-gray" style="text-align: center; margin-top: 0; color: #fff">Android Hijja</h3>
+               <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                  <h3 class="header-gray ex-feature-title">Android Hijja</h3>
                   <a href="https://play.google.com/store/apps/details?id=com.sistemtoko.hijja&amp;hl=en" target="_blank">
-                     <img src="dist/android-hijja.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
+                     <img src="assets/images/android-hijja.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
                   </a>
                </div>
 
-               <div class="col-md-4 col-sm-6 fiture-box">
-                  <h3 class="header-gray" style="text-align: center; margin-top: 0; color: #fff">Android Gamis</h3>
+               <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                  <h3 class="header-gray ex-feature-title">Android Gamis</h3>
                   <a href="https://play.google.com/store/apps/details?id=com.sistemtoko.grosirgamissurabaya&amp;hl=en" target="_blank">
-                     <img src="dist/logo-gamis.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
+                     <img src="assets/images/logo-gamis.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
                   </a>
                </div>
 
-               <div class="col-md-4 col-sm-6 fiture-box">
-                  <h3 class="header-gray" style="text-align: center; margin-top: 0; color: #fff">Android Nooraia</h3>
+               <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                  <h3 class="header-gray ex-feature-title">Android Nooraia</h3>
                   <a href="https://play.google.com/store/apps/details?id=com.sistemtoko.nooraia&amp;hl=en" target="_blank">
-                     <img src="dist/android-nooraia.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
+                     <img src="assets/images/android-nooraia.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
+                  </a>
+               </div>
+
+               <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                  <h3 class="header-gray ex-feature-title">Android Nooraia</h3>
+                  <a href="https://play.google.com/store/apps/details?id=com.sistemtoko.nooraia&amp;hl=en" target="_blank">
+                     <img src="assets/images/android-nooraia.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
+                  </a>
+               </div>
+
+               <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                  <h3 class="header-gray ex-feature-title">Android Hijja</h3>
+                  <a href="https://play.google.com/store/apps/details?id=com.sistemtoko.hijja&amp;hl=en" target="_blank">
+                     <img src="assets/images/android-hijja.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
+                  </a>
+               </div>
+
+               <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                  <h3 class="header-gray ex-feature-title">Android Gamis</h3>
+                  <a href="https://play.google.com/store/apps/details?id=com.sistemtoko.grosirgamissurabaya&amp;hl=en" target="_blank">
+                     <img src="assets/images/logo-gamis.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
                   </a>
                </div>
             </div>
          </div>
       </div>
 
-      <div class="row quote" id="chatbot" style="padding: 100px 0 50px 0; background: #fff">
-         <div class="col-sm-6 hidden-xs col-lg-8" align="left" style="background: url(img/chatbot.jpg) right no-repeat; height: 600px"></div>
+      <!-- SHOW FEATURE CUSTOM LOGO -->
+      <div class="row quote" id="custom-logo" style="padding: 100px 0 60px 0; background: #fff; max-width: 1280px; margin: auto">
+         <div class="col-sm-6 col-xs-12 col-lg-6" style="margin-top: 70px" align="left">
+            <div class="box_banking" style="margin-top: 60px; padding-left: 32px">
+               <img src="assets/images/show-feature-custom-logo.png" class="visible-xs" width="100%" style="margin-bottom: 20px; margin-left: -10px" alt="sistemtoko.com preview" />
+               <div class="header-gray inet-banking">Design dan Custom Logo</div>
+               <div class="header-gray" style="font-size: 20px; margin-bottom: 20px">Miliki tampilan logo untuk usaha anda</div>
 
-         <div class="col-xs-12 col-sm-6 col-lg-4" align="left">
+               <div class="col-md-12 fiture-box" style="padding: 0 !important">
+                  <div class="col-md-10 col-sm-12 col-xs-12">
+                     <div class="fiture-header"><img src="assets/icons/pencil.svg" style="margin-right: 16px" alt="clock-icons" />Design Logo</div>
+                     <p class="text-future" style="margin-left: 48px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Dapatkan logo gratis untuk kebutuhan usaha anda</p>
+                  </div>
+                  <div style="clear: both"></div>
+               </div>
+
+               <div class="col-md-12 fiture-box" style="padding: 0 !important">
+                  <div class="col-md-10 col-sm-12 col-xs-12">
+                     <div class="fiture-header"><img src="assets/icons/globe.svg" style="margin-right: 16px" alt="chat-icon" />Custom Logo</div>
+                     <p class="text-future" style="margin-left: 48px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Konsultasikan logo yang sesuai keinginan dan kebutuhan anda dengan tim desain kami</p>
+                  </div>
+                  <div style="clear: both"></div>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-6 hidden-xs col-lg-6" align="left" style="background: url(assets/images/show-feature-custom-logo.png) right no-repeat; height: 600px"></div>
+      </div>
+
+      <!-- BREAK SECTION CONTOH DESAIN LOGO -->
+      <section class="row">
+         <div class="container">
+            <div class="col-md-12" style="padding: 30px 0; text-align: center">
+               <div style="font-size: 40px; font-weight: 700; color: #263238">Design Logo dari Tim Kami</div>
+               <div style="clear: both"></div>
+            </div>
+         </div>
+      </section>
+      <div class="row penjelasan" id="other fiture">
+         <div class="container" id="list-fitur" style="padding: 20px 0 30px 0">
+            <div class="row" id="fiture-row">
+               <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                  <h3 class="header-gray ex-feature-title">Android Hijja</h3>
+                  <a href="https://play.google.com/store/apps/details?id=com.sistemtoko.hijja&amp;hl=en" target="_blank">
+                     <img src="assets/images/android-hijja.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
+                  </a>
+               </div>
+
+               <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                  <h3 class="header-gray ex-feature-title">Android Gamis</h3>
+                  <a href="https://play.google.com/store/apps/details?id=com.sistemtoko.grosirgamissurabaya&amp;hl=en" target="_blank">
+                     <img src="assets/images/logo-gamis.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
+                  </a>
+               </div>
+
+               <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                  <h3 class="header-gray ex-feature-title">Android Nooraia</h3>
+                  <a href="https://play.google.com/store/apps/details?id=com.sistemtoko.nooraia&amp;hl=en" target="_blank">
+                     <img src="assets/images/android-nooraia.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- OTHER ADVANTAGES -->
+      <section class="row" style="margin-top: 100px">
+         <div class="container">
+            <div class="col-md-12" style="padding: 30px 0; text-align: center">
+               <div style="font-size: 40px; font-weight: 700; color: #263238">Keuntungan Lain dari Kami</div>
+               <div style="clear: both"></div>
+            </div>
+         </div>
+      </section>
+
+      <!-- CHAT BOT -->
+      <section class="row quote" id="chatbot" style="padding: 0px 0 50px 0; background: #fff; max-width: 1280px; margin: auto">
+         <div class="col-sm-6 hidden-xs col-lg-6" align="left" style="background: url(assets/images/advantage-chatbot.png) right no-repeat; height: 500px"></div>
+
+         <div class="col-xs-12 col-sm-6 col-lg-6" align="left" style="padding-left: 90px">
             <div class="box_banking">
-               <img src="dist/chatbot.jpg" class="visible-xs" width="100%" style="margin-bottom: 20px; margin-left: -10px" alt="sistemtoko preview" />
+               <img src="assets/images/advantage-chatbot.png" class="visible-xs" width="100%" style="margin-bottom: 20px; margin-left: -10px" alt="sistemtoko preview" />
 
-               <div class="header-gray inet-banking">Chat Bot.<span style="font-size: 12px">Beta</span></div>
+               <div class="header-gray inet-banking">ChatBot</div>
                <div class="header-gray" style="font-size: 20px; margin-bottom: 20px">Dapat secara otomatis membalas chatingan customer</div>
 
                <div class="col-md-12 fiture-box" style="padding: 5px 0 0 0 !important" id="facebook">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header">1. Cek Stock</div>
+                     <div class="fiture-header" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" /> Cek Stock</div>
                   </div>
                   <div style="clear: both"></div>
                </div>
 
                <div class="col-md-12 fiture-box" style="padding: 5px 0 0 0 !important" id="facebook">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header">2. Order</div>
+                     <div class="fiture-header" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" /> Order</div>
                   </div>
                   <div style="clear: both"></div>
                </div>
 
                <div class="col-md-12 fiture-box" style="padding: 5px 0 0 0 !important" id="facebook">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header">3. Cek Order</div>
+                     <div class="fiture-header" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" /> Cek Order</div>
                   </div>
                   <div style="clear: both"></div>
                </div>
 
                <div class="col-md-12 fiture-box" style="padding: 5px 0 0 0 !important" id="facebook">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header">4. Cek Pembayaran</div>
+                     <div class="fiture-header" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" />Cek Pembayaran</div>
                   </div>
                   <div style="clear: both"></div>
                </div>
 
                <div class="col-md-12 fiture-box" style="padding: 5px 0 0 0 !important" id="facebook">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header">5. Pembayaran</div>
+                     <div class="fiture-header" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" /> Pembayaran</div>
                   </div>
                   <div style="clear: both"></div>
                </div>
 
                <div class="col-md-12 fiture-box" style="padding: 5px 0 0 0 !important" id="facebook">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header">6. Tanya CS</div>
+                     <div class="fiture-header" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" />Tanya CS</div>
                   </div>
                   <div style="clear: both"></div>
                </div>
 
                <div class="col-md-12 fiture-box" style="padding: 5px 0 0 0 !important" id="facebook">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header">7. Minta Resi</div>
-                  </div>
-                  <div style="clear: both"></div>
-               </div>
-
-               <div class="col-md-12 fiture-box" style="padding: 0 !important">
-                  <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header">
-                        <br />
-                        <a class="btn btn-lg signup hidden-xs" href="https://demo.sistemtoko.com/chat" target="_blank" style="font-size: 21px">Coba Chatbot, Klik</a>
-                     </div>
+                     <div class="fiture-header" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" /> Minta Resi</div>
                   </div>
                   <div style="clear: both"></div>
                </div>
             </div>
          </div>
-      </div>
+      </section>
 
-      <div class="row penjelasan" id="penjelasan-1">
-         <div class="container">
-            <div class="col-md-12" style="padding: 30px 0; text-align: center; color: #fff">
-               <div style="font-size: 30px">
-                  Coba Chatbot nya ?
-
-                  <div style="margin-bottom: 15px; text-align: center" class="text-center">
-                     <a href="https://demo.sistemtoko.com/chat" class="btn btn-lg signup" target="_blank"> Klik Disini </a>
-                     <br />
-                  </div>
-               </div>
-
-               <div style="clear: both"></div>
-            </div>
-         </div>
-      </div>
-
-      <div class="row quote" id="kasir" style="padding: 100px 0; background: #fff">
-         <div class="col-xs-12 col-sm-6 col-lg-4" align="right">
+      <!-- KASIR OFFLINE -->
+      <section class="row quote" id="chatbot" style="padding: 0px 0 50px 0; background: #fff; max-width: 1280px; margin: auto">
+         <div class="col-xs-12 col-sm-6 col-lg-6" align="left" style="padding-right: 90px">
             <div class="box_banking">
-               <img src="dist/kasir.jpg" class="visible-xs" width="100%" style="margin-bottom: 20px; margin-left: -10px" alt="Sistemtoko preview" />
+               <img src="assets/images/advantage-kasir-offline.png" class="visible-xs" width="100%" style="margin-bottom: 20px; margin-left: -10px" alt="sistemtoko preview" />
+               <div class="header-gray inet-banking">Kasir Offline</div>
+               <div class="header-gray" style="font-size: 20px; margin-bottom: 20px">Dengan aplikasi ini anda dapat mencatat penjualan secara Offline</div>
 
-               <div class="header-gray inet-banking">Kasir Offline.<span style="font-size: 10px">Beta</span></div>
-               <div class="header-gray" style="font-size: 20px; margin-bottom: 20px">Dengan aplikasi ini anda dapat mencatat penjualan secara offline.</div>
-
-               <div class="col-md-12 fiture-box" style="padding: 0 !important" id="facebook">
-                  <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header">Syncronize</div>
-                     <p class="text-future" style="margin: 0 0 16px 25px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Dapat di syncronize dengan database pusat (online).</p>
+               <div class="col-md-12 fiture-box shadow-box" style="margin-bottom: 24px">
+                  <div class="col-md-10 col-sm-12 col-xs-12">
+                     <div class="fiture-header"><img src="assets/icons/sync.svg" style="margin-right: 16px" alt="clock-icons" />Sinkronasi</div>
+                     <p class="text-future" style="margin-left: 58px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Dapat di sinkronisasi dengan database pusat (online).</p>
                   </div>
                   <div style="clear: both"></div>
                </div>
-               <div class="col-md-12 fiture-box" style="padding: 0 !important" id="instagram">
-                  <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header">Login Pegawai</div>
-                     <p class="text-future" style="margin: 0 0 16px 25px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">
-                        Pegawai memiliki akun masing-masing
-                        <br />
-                     </p>
+
+               <div class="col-md-12 fiture-box shadow-box" style="margin-bottom: 24px">
+                  <div class="col-md-10 col-sm-12 col-xs-12">
+                     <div class="fiture-header"><img src="assets/icons/login.svg" style="margin-right: 16px" alt="clock-icons" />Login Pegawai</div>
+                     <p class="text-future" style="margin-left: 58px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Pegawai memiliki akun maisng-masing untuk login</p>
                   </div>
                   <div style="clear: both"></div>
                </div>
             </div>
          </div>
+         <div class="col-sm-6 hidden-xs col-lg-6" align="left" style="background: url(assets/images/advantage-kasir-offline.png) right no-repeat; height: 450px"></div>
+      </section>
 
-         <div class="col-sm-6 hidden-xs col-lg-8" align="left" style="background: url(img/kasir.jpg) left no-repeat; height: 600px"></div>
-      </div>
+      <!-- SISFO BERBASIS WEBSITE -->
+      <section class="row quote" id="chatbot" style="padding: 0px 0 50px 0; background: #fff; max-width: 1280px; margin: auto">
+         <div class="col-sm-6 hidden-xs col-lg-6" align="left" style="background: url(assets/images/advantage-sistem-informasi.png) right no-repeat; height: 500px"></div>
 
-      <!-- background: url('img/profesi/bgflip.jpg') left no-repeat fixed #1AA8F8 -->
-      <div class="row quote" id="sistem" style="padding: 50px 0; color: #fff">
-         <!-- <div class="col-xs-12 col-sm-6 col-lg-4" align="right">
-            <div class="box_ekspedisi">
-
-                <img src="https://sistemtoko.com/img/ekspedisi.png" class="visible-xs" width="100%" 
-                style="margin-bottom: 20px; margin-left: -10px;" alt="pengiriman sistemtoko.com"/>
-
-
-                <h2 class="si-judul">Sistem Informasi</h2>
-                <div style="font-size: 20px ; ">
-                    <div class="si-desc" style="margin-bottom: 10px;">
-                        dengan sistem ini anda dapat melakukan management order dengan baik , bahkan melakukan tracking status pesanan sampai ke status delivery yang terintegrasi dengan sistem ekspedisi 
-                    </div>
-                    <div class="icon-ekspedisi">
-                        <img src="https://sistemtoko.com/img/frontend/jne.png"/ alt="sistemtoko.com pengiriman"> 
-                        <img src="https://sistemtoko.com/img/frontend/pos.png"/ alt="sistemtoko.com pengiriman"> 
-                        <img src="https://sistemtoko.com/img/frontend/tiki.png"/ alt="sistemtoko.com pengiriman">
-                    </div> 
-                </div>
+         <div class="col-xs-12 col-sm-6 col-lg-6" align="left" style="padding-left: 90px; padding-top: 24px">
+            <div class="box_banking">
+               <img src="assets/images/advantage-sistem-informasi.png" class="visible-xs" width="100%" style="margin-bottom: 20px; margin-left: -10px" alt="sistemtoko preview" />
+               <div class="header-gray inet-banking">Sistem Informasi Berbasis Website</div>
+               <div class="header-gray" style="font-size: 20px; margin-top: 20px">
+                  Dengan sistem ini anda dapat melakukan management order dengan baik. Dilengkapi dengan berbagai fitur yang mendukung bisnis anda seperti laporan , data customer , stock gudang , history keluar masuk barang , print label pengiriman , management status order dll.
+               </div>
             </div>
-       </div> -->
-         <div class="container" align="center">
-            <h2 class="header-gray inet-banking" style="color: #fff">Sistem Informasi Berbasis Website</h2>
-            <div class="si-desc" style="padding-top: 20px; font-size: 20px" align="center">
-               Dengan sistem ini anda dapat melakukan management order dengan baik. Dilengkapi dengan berbagai fitur yang mendukung bisnis anda seperti laporan , data customer , stock gudang , history keluar masuk barang , print label pengiriman , management status order dll.
-            </div>
-
-            <div class="col-sm-6 hidden-xs col-lg-12" align="left" style="background: url(img/animation.gif) center no-repeat; height: 600px"></div>
-            <img src="dist/ekspedisi.png" class="visible-xs" width="100%" style="margin-bottom: 20px; margin-left: -10px" alt="pengiriman sistemtoko.com" />
-
-            <div style="clear: both"></div>
          </div>
-      </div>
+      </section>
 
-      <style>
-         #faqAccordion {
-            text-align: left;
-         }
-         .ing {
-            font-size: 30px;
-            text-decoration: none !important;
-         }
-         .question-toggle {
-            cursor: pointer;
-         }
-         #faqAccordion h5 {
-            font-weight: bold;
-            font-size: 25px;
-            margin-bottom: 25px;
-         }
-         .panel-body {
-            font-size: 20px;
-         }
-         .panel-default > .panel-heading {
-            color: #333;
-            background-color: #ffd550;
-            border: #fff solid 1px;
-         }
-         #listfaq {
-            max-width: 500px;
-            text-align: left;
-            margin: 0 auto;
-         }
-         #listfaq li {
-            margin-bottom: 10px;
-         }
-         #faqAccordion .caret {
-            border-left: 8px solid transparent;
-            border-right: 8px solid transparent;
-            border-top: 8px solid #000000;
-            float: right;
-            margin-top: 15px;
-         }
-      </style>
-      <script>
-         $(document).ready(function () {
-            $('#fitur').click();
-         });
-      </script>
-      <div class="container">
+      <!-- PELATIHAN GRATIS -->
+      <section class="row quote" id="chatbot" style="padding: 0px 0 50px 0; background: #fff; max-width: 1280px; margin: auto">
+         <div class="col-xs-12 col-sm-6 col-lg-6" align="left" style="padding-right: 90px">
+            <div class="box_banking">
+               <img src="assets/images/advantage-pelatihan.png" class="visible-xs" width="100%" style="margin-bottom: 20px; margin-left: -10px" alt="sistemtoko preview" />
+               <div class="header-gray inet-banking">Pelatihan Gratis</div>
+               <div class="header-gray" style="font-size: 20px; margin-bottom: 20px">Dapatkan Bimbingan dan Pelatihan Website dan Pemasaran</div>
+
+               <div class="col-md-12 fiture-box shadow-box" style="margin-bottom: 24px">
+                  <div class="col-md-10 col-sm-12 col-xs-12">
+                     <div class="fiture-header"><img src="assets/icons/template.svg" style="margin-right: 16px" alt="clock-icons" />Website Coaching</div>
+                     <p class="text-future" style="margin-left: 58px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Anda akan mendapat bimbngan mengenai penggunaan website</p>
+                  </div>
+                  <div style="clear: both"></div>
+               </div>
+
+               <div class="col-md-12 fiture-box shadow-box" style="margin-bottom: 24px">
+                  <div class="col-md-10 col-sm-12 col-xs-12">
+                     <div class="fiture-header"><img src="assets/icons/cart.svg" style="margin-right: 16px" alt="clock-icons" />Marketing Coaching</div>
+                     <p class="text-future" style="margin-left: 58px; padding: 0px; line-height: 19px; color: rgb(0, 0, 0)">Anda akan mendapat bimbingan mengenai cara memasarkan produk anda secara digital</p>
+                  </div>
+                  <div style="clear: both"></div>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-6 hidden-xs col-lg-6" align="left" style="background: url(assets/images/advantage-pelatihan.png) right no-repeat; height: 450px"></div>
+      </section>
+
+      <!-- BANTUAN TIM PEMASARAN -->
+      <section class="row quote" id="chatbot" style="padding: 0px 0 50px 0; background: #fff; max-width: 1280px; margin: auto">
+         <div class="col-sm-6 hidden-xs col-lg-6" align="left" style="background: url(assets/images/advantage-bantuan-tim-pasar.png) right no-repeat; height: 500px"></div>
+
+         <div class="col-xs-12 col-sm-6 col-lg-6" align="left" style="padding-left: 90px; padding-top: 100px">
+            <div class="box_banking">
+               <img src="assets/images/advantage-bantuan-tim-pasar.png" class="visible-xs" width="100%" style="margin-bottom: 20px; margin-left: -10px" alt="sistemtoko preview" />
+               <div class="header-gray inet-banking">Bantuan Tim Pemasaran</div>
+               <div class="header-gray" style="font-size: 20px; margin-top: 20px">Tim digital marketing dan sosial media kami dapat membantu untuk meningkatkan penjualan produk anda. Serta dapatkan konsultasi gratis untuk merencanakan pemasaran produk anda.</div>
+            </div>
+         </div>
+      </section>
+
+      <!-- BACA JUGA -->
+      <section style="max-width: 1280px; margin: auto; padding: 0 16px 0 16px">
          <div style="font-size: 40px; font-weight: bold; text-align: center; margin-bottom: 20px">Baca Juga</div>
          <div class="panel-group" id="faqAccordion">
             <div class="panel panel-default panel-header">
                <div class="panel-heading accordion-toggle question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question3" id="fitur" aria-expanded="true">
-                  <h4 class="panel-title">
+                  <h4 class="panel-title" style="padding-top: 16px; padding-bottom: 16px">
                      <a class="ing">List Fitur<b class="caret"></b></a>
                   </h4>
                </div>
                <div id="question3" class="panel-collapse collapse in" aria-expanded="true">
                   <div class="panel-body">
-                     <h5>Berikut beberapa fitur yang tersedia di sistemtoko.com</h5>
-
                      <div class="col-md-4">
-                        <ul style="padding: 0 10px">
-                           <li>Pencatatan data order</li>
-                           <li>pencatatan data customer</li>
-                           <li>pencatatan data product</li>
-                           <li>cek ongkir &amp; resi</li>
-                           <li>laporan penjualan</li>
-                           <li>laporan ongkir</li>
-                           <li>laporan pembayaran</li>
-                           <li>history keluar masuk barang</li>
-                           <li>laporan kota terlaris</li>
-                           <li>invite sub admin</li>
-                           <li>konfigurasi hak akses</li>
-                           <li>print label delivery</li>
-                           <li>template label delivery</li>
+                        <ul style="padding: 0 10px; list-style-type: none">
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />Pencatatan data order</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />pencatatan data customer</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />pencatatan data product</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />cek ongkir &amp; resi</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />laporan penjualan</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />laporan ongkir</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />laporan pembayaran</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />history keluar masuk barang</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />laporan kota terlaris</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />invite sub admin</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />konfigurasi hak akses</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />print label delivery</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />template label delivery</li>
                         </ul>
                      </div>
 
                      <div class="col-md-4">
-                        <ul style="padding: 0 10px">
-                           <li style="color: green; font-weight: bold">Followup pembayaran via whatsapp</li>
-                           <li>Custom step order</li>
-                           <li>Link invoice</li>
-                           <li>history perubahan invoice</li>
-                           <li>website.com</li>
-                           <li>pilihan template web</li>
-                           <li>web pc, hp &amp; tab</li>
-                           <li>keranjang belanja</li>
-                           <li>otomatis hitung ongkir</li>
-                           <li>realtime stock</li>
-                           <li>fitur pencarian product</li>
-                           <li>blog &amp; gallery</li>
+                        <ul style="padding: 0 10px; list-style-type: none">
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />Followup pembayaran</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />Custom step order</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />Link invoice</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />history perubahan invoice</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />website.com</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />pilihan template web</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />web pc, hp &amp; tab</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />keranjang belanja</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />otomatis hitung ongkir</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />realtime stock</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />fitur pencarian product</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />blog &amp; gallery</li>
                         </ul>
                      </div>
 
                      <div class="col-md-4">
-                        <ul style="padding: 0 10px">
-                           <li>login member</li>
-                           <li>widget chat</li>
-                           <li>aplikasi android</li>
-                           <li>status order</li>
-                           <li>history order</li>
-                           <li>chatbot</li>
-                           <li>Fitur Voucher</li>
-                           <li>Varian product</li>
-                           <li>Mutasi Barang</li>
-                           <li>export &amp; import product</li>
-                           <li>list rekening</li>
-                           <li>aplikasi kasir</li>
-                           <li>Dan masih banyak lagi</li>
+                        <ul style="padding: 0 10px; list-style-type: none">
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />login member</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />widget chat</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />aplikasi android</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />status order</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />history order</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />chatbot</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />Fitur Voucher</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />Varian product</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />Mutasi Barang</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />export &amp; import product</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />list rekening</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />aplikasi kasir</li>
+                           <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />Dan masih banyak lagi</li>
                         </ul>
                      </div>
                   </div>
@@ -1099,14 +1109,13 @@
 
             <div class="panel panel-default panel-header">
                <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question2" id="faqhabot" aria-expanded="false">
-                  <h4 class="panel-title">
+                  <h4 class="panel-title" style="padding-top: 16px; padding-bottom: 16px">
                      <a class="ing">Apa &amp; Manfaat Chatbot ?<b class="caret"></b></a>
                   </h4>
                </div>
                <div id="question2" class="panel-collapse collapse" style="height: 0px" aria-expanded="false">
                   <div class="panel-body">
                      <h5>Apakah itu Chatbot dan apakah manfaat menggunakan Chatbot ?</h5>
-
                      <p>
                         Chatbot adalah aplikasi chat yang dapat secara otomatis membalas pesan dari customer. Dengan memiliki aplikasi ini Customer Service anda akan semakin mudah karena chatbot dapat menjawab secara otomatis pertanyaan - pertanyaan yang sering di tanyakan oleh customer, seperti :
                         <br /><br />
@@ -1120,80 +1129,13 @@
                         <li>Minta Resi</li>
                      </ul>
                      <br />
-
                      Dengan demikian toko kamu dapat <b style="color: red">melayani customer 24jam non stop dengan respon time hitungan detik</b>
-
                      <p></p>
                   </div>
                </div>
             </div>
-
-            <!-- <div class="panel panel-default panel-header">
-            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0" id="kelebihan">
-                <h4 class="panel-title">
-                    <a class="ing">Apa kelebihan Sistemtoko? </a>
-                    <b class="caret"></b>
-                </h4>
-            </div>
-            <div id="question0" class="panel-collapse collapse" style="height: 0px;">
-                <div class="panel-body">
-        
-                    <h5> <span>Apasih kelebihan Sistemtoko dibanding dengan aplikasi yang lain ? </span> </h5>
-        
-                    <p>
-                        Sistemtoko.com adalah <b style="color:red">1-1nya</b> aplikasi toko yang memiliki 5 kombinasi : 
-                        <b style="color:red">sistem informasi, website, android, chatbot & kasir. </b> Product lain , tidak selengkap ini , dan biasanya berdiri sendiri-sendiri ( tidak terintegrasi) sehingga merepotkan untuk update data 1 per 1 .<br>
-                        <br>
-        
-                        <ul id="listfaq">
-                            <li>Termurah, 1 harga untuk 5 jenis aplikasi yang saling terintegrasi</li>
-                            <li>Fitur revolusioner layanan CS dengan fitur autorespon Chatbot</li>
-                            <li><b style="color:red">Terbukti! Sudah digunakan onlineshop2 dengan omset milyaran</b></li>
-                            <li>Gratis Update,  Konsultasi & pendampingan, seperti memiliki team IT anda sndiri</li>
-                            <li>Dapat di operasikan dari laptop , tab atau hp</li>
-                            <li>Dapat mengelola semua toko / brand / cabang yg berbeda-beda , baik online & offline dalam 1 dashboard</li>
-                        </ul>
-                        <br>
-        
-        
-                    </p>
-                </div>
-            </div>
-        
-        </div>
-        
-        <div class="panel panel-default panel-header">
-            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1" id="mengapa">
-                <h4 class="panel-title">
-                    <a class="ing">Mengapa harus Sistemtoko ? <b class="caret"></b></a>
-                </h4>
-            </div>
-            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
-                <div class="panel-body">
-                    <h5> Mengapa harus Sistemtoko ? karena sudah Terbukti !</h5>
-        
-                    <p>
-                        Sistemtoko sudah digunakan oleh <b style="color:red">onlineshop2 ternama yang omsetnya telah mencapai milyaran rupiah</b>.
-        
-                        <br><br>Anda akan memiliki alur sistem yang membimbing & memundukung arah perbaikan (perkembangan) seperti onlineshop sukses tersebut<br><br>
-                        
-                        Berikut fokus Sistemtoko.com :
-                        <ul id="listfaq">
-                            <li>management lebih rapi</li>
-                            <li>pengelolaan usaha anda lebih mudah</li>
-                            <li>scaleup ( pengembangan ) anda lebih cepat</li>
-                            <li>menerapkan pola management yang sudah teruji</li>
-                        </ul>
-                        <br>
-        
-        
-                    </p>
-                </div>
-            </div>
-        </div> -->
          </div>
-         <!--/panel-group-->
-      </div>
+      </section>
 
       <style type="text/css">
          .soon {
@@ -1226,12 +1168,7 @@
                      <ul style="margin: 0; padding: 0 0 0 20px" class="info_pricing">
                         <li>Konsultasi</li>
                         <li>Website</li>
-                        <!-- <li>Web Template</li> -->
-                        <!-- <li>Jumlah Toko</li> -->
-                        <!-- <li>Jumlah User</li> -->
-                        <!-- <li>Jumlah Product</li> -->
                         <li>Jumlah Invoice</li>
-                        <!-- <li>Storage</li>  -->
                         <li>Android Apps</li>
                         <li>Chat Bot</li>
                         <li>Aplikasi Kasir</li>
@@ -1239,7 +1176,7 @@
                   </div>
 
                   <div class="col-md-3 col-sm-4" align="center">
-                     <img src="dist/otoped.jpg" alt="Sistemtoko" class="" style="margin-top: 20px" />
+                     <img src="assets/images/otoped.jpg" alt="Sistemtoko" class="" style="margin-top: 20px" />
                      <h2 style="font-weight: bold; color: #427b9f">Free</h2>
                      <ul style="margin: 20px 0 0 0; padding: 0; text-align: center">
                         <li>
@@ -1250,10 +1187,6 @@
                            <div class="label_price visible-xs">Website</div>
                            Subdomain
                         </li>
-                        <!-- <li><div class="label_price visible-xs">Web template</div> Free Template </li> -->
-                        <!-- <li><div class="label_price visible-xs">Jumlah Toko</div> 2 Toko</li> -->
-                        <!-- <li><div class="label_price visible-xs">Jumlah User</div> Unlimited</li>
-                            <li><div class="label_price visible-xs">Jumlah Product</div> Unlimited</li> -->
                         <li>
                            <div class="label_price visible-xs">Jumlah Invoice</div>
                            Limited
@@ -1295,7 +1228,7 @@
                   </div>
 
                   <div class="col-md-3 col-sm-4" align="center">
-                     <img src="dist/motor.jpg" alt="Sistemtoko" class="" style="margin-top: 20px" />
+                     <img src="assets/images/motor.jpg" alt="Sistemtoko" class="" style="margin-top: 20px" />
                      <h2 style="font-weight: bold; color: #427b9f">Platinum</h2>
                      <ul style="margin: 20px 0 0 0; padding: 0; text-align: center">
                         <li>
@@ -1306,10 +1239,6 @@
                            <div class="label_price visible-xs">Website</div>
                            1 Domain (.com)
                         </li>
-                        <!-- <li><div class="label_price visible-xs">Web template</div> Free Template </li> -->
-                        <!-- <li><div class="label_price visible-xs">Jumlah Toko</div> 2 Toko</li> -->
-                        <!-- <li><div class="label_price visible-xs">Jumlah User</div> Unlimited</li>
-                            <li><div class="label_price visible-xs">Jumlah Product</div> Unlimited</li> -->
                         <li>
                            <div class="label_price visible-xs">Jumlah Invoice</div>
                            Unlimited
@@ -1352,12 +1281,12 @@
                   </div>
 
                   <div class="col-md-4 col-sm-4" align="center">
-                     <img src="dist/rocket.jpg" class="" style="margin-top: 20px" alt="Sistemtoko" />
+                     <img src="assets/images/rocket.jpg" class="" style="margin-top: 20px" alt="Sistemtoko" />
                      <h2 style="font-weight: bold; color: #427b9f">Corporate</h2>
                      <ul style="margin: 20px 0 0 0; padding: 0; text-align: center">
                         <li style="line-height: 2; text-align: justify; padding: 0 35px">
                            <div align="center">
-                              <img src="dist/shopee.png" style="max-width: 50%" /><br />
+                              <img src="assets/images/shopee.png" style="max-width: 50%" /><br />
                               Terintegrasi dengan Shopee
                            </div>
 
@@ -1383,10 +1312,7 @@
          </div>
       </div>
 
-      <!-- TOS, FAQ -->
-
       <!-- Fitur   -->
-
       <div class="row footer" id="footer">
          <div class="container">
             <div class="col-md-4">
@@ -1418,5 +1344,62 @@
          </div>
       </div>
       <!-- /container -->
+
+      <script type="text/javascript">
+         $(function () {
+            $('#typed').typed({
+               strings: [
+                  // "Kasir Toko offline ( comming soon ) ",
+                  'Sistem informasi retail',
+                  'Website E-commerce',
+                  'Facebook Messenger',
+                  'JNE, Pos , Tiki dan logistic lainya',
+               ],
+               typeSpeed: 25,
+               backDelay: 2000,
+               loop: true,
+               contentType: 'text',
+               loopCount: false,
+               callback: function () {
+                  foo();
+               },
+               resetCallback: function () {
+                  newTyped();
+               },
+            });
+
+            $('.reset').click(function () {
+               $('#typed').typed('reset');
+            });
+
+            // #mobile-menu
+            $('#bs-example-navbar-collapse-1 a').click(function (event) {
+               cek = $(this).attr('href');
+               //alert(cek);
+               if (cek != undefined && !$('#mobile-menu').hasClass('collapsed')) {
+                  $('#mobile-menu').click();
+               }
+            });
+         });
+
+         function newTyped() {
+            /* A new typed object */
+         }
+
+         function foo() {
+            console.log('Callback');
+         }
+
+         var $document = $(document),
+            className = 'fix_menu';
+
+         function toRegister(package) {
+            window.location = 'https://sistemtoko.com/register/?package=' + package;
+         }
+
+         $(document).ready(function () {
+            $('#fitur').click();
+         });
+      </script>
    </body>
 </html>

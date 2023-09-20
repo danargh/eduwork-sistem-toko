@@ -424,14 +424,13 @@ body {
 }
 
 .fiture-box {
-   padding: 20px;
+   padding: 10px;
 }
 
 .fiture-box-up {
-   padding: 20px 0;
-   margin-top: 20px;
+   /* padding-top: 40px; */
    /* max-width: 260px; */
-   height: 340px;
+   height: 350px;
    border-radius: 16px;
    background-color: #fff;
    box-shadow: 10px 15px 60px 0px rgba(0, 0, 0, 0.07);
@@ -495,6 +494,10 @@ a.navbar-brand:hover {
    color: #484848;
    border-radius: 30px;
    font-weight: 400;
+}
+
+.demo-button {
+   padding: 16px 48px;
 }
 
 .signup:hover {
@@ -563,13 +566,37 @@ a.navbar-brand:hover {
 }
 
 .img-transparent {
-   opacity: 0.8;
-   filter: alpha(opacity=80);
-}
-
-.img-transparent:hover {
    opacity: 1;
    filter: alpha(opacity=100);
+   transition: opacity 0.3s ease-in-out;
+}
+
+.ex-feature-title {
+   position: absolute;
+   bottom: 24px;
+   left: 34px;
+   z-index: 100;
+   color: #fff;
+   opacity: 0;
+   transition: opacity 0.3s ease-in-out;
+}
+
+.hovered-wrapper:hover .img-transparent {
+   opacity: 0.5;
+   filter: alpha(opacity=50);
+   transition: opacity 0.3s ease-in-out;
+}
+
+.hovered-wrapper:hover .ex-feature-title {
+   opacity: 1 !important;
+   transition: opacity 0.3s ease-in-out;
+}
+
+.shadow-box {
+   border-radius: 10px;
+   padding: 14px 10px;
+   background-color: #fff;
+   box-shadow: 0.52872px 0.9819px 5.4288px 0px rgba(0, 0, 0, 0.02), 2.36367px 4.38968px 12.5424px 0px rgba(0, 0, 0, 0.03), 5.87808px 10.91643px 28.6416px 0px rgba(0, 0, 0, 0.04), 11.44515px 21.25528px 61.0272px 0px rgba(0, 0, 0, 0.05), 19.43809px 36.09932px 117px 0px rgba(0, 0, 0, 0.07);
 }
 
 #login,
