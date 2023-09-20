@@ -61,6 +61,10 @@ h1.main_title {
    font-size: 50px;
 }
 
+.main_title-bold {
+   font-weight: 600;
+}
+
 body {
    font-family: 'Poppins', sans-serif, 'open sans', tahoma, sans-serif !important;
    font-weight: 400;
@@ -335,12 +339,13 @@ body {
 
 .text-future {
    color: #484848 !important;
-   font-size: 12px;
+   font-size: 14px;
    font-weight: 400;
 }
 
 .fiture-header {
    font-size: 20px;
+   margin-bottom: 8px;
    font-weight: 700;
    color: #484848;
 }
@@ -397,6 +402,7 @@ body {
 .header-subtitle,
 .heading_row {
    font-size: 30px;
+   color: #000000;
    text-align: center;
 }
 
@@ -430,6 +436,9 @@ body {
 .fiture-box-up {
    /* padding-top: 40px; */
    /* max-width: 260px; */
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
    height: 350px;
    border-radius: 16px;
    background-color: #fff;
@@ -451,7 +460,7 @@ body {
 
 @media (max-width: 576px) {
    .fiture-box-up {
-      height: 400px;
+      height: 500px;
    }
 }
 
