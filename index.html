@@ -130,115 +130,6 @@
       </script>
 
       <script src="js/OneSignalPageSDKES6.js" async=""></script>
-
-      <style type="text/css">
-         .link-style {
-            cursor: pointer;
-         }
-
-         @media (max-width: 767px) {
-            .fix_menu {
-               left: auto;
-            }
-         }
-
-         .fix_menu {
-            position: fixed;
-            z-index: 99999999999999;
-            background: #1aa8f8;
-            width: calc(100%);
-            left: 0;
-            border-radius: 0;
-            transition: top 0s ease-in-out;
-         }
-
-         /* code for animated blinking cursor */
-         .typed-cursor {
-            opacity: 1;
-            -webkit-animation: blink 0.7s infinite;
-            -moz-animation: blink 0.7s infinite;
-            animation: blink 0.7s infinite;
-         }
-         @keyframes blink {
-            0% {
-               opacity: 1;
-            }
-            50% {
-               opacity: 0;
-            }
-            100% {
-               opacity: 1;
-            }
-         }
-         @-webkit-keyframes blink {
-            0% {
-               opacity: 1;
-            }
-            50% {
-               opacity: 0;
-            }
-            100% {
-               opacity: 1;
-            }
-         }
-         @-moz-keyframes blink {
-            0% {
-               opacity: 1;
-            }
-            50% {
-               opacity: 0;
-            }
-            100% {
-               opacity: 1;
-            }
-         }
-
-         .coverbackground {
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover !important;
-         }
-
-         #faqAccordion {
-            text-align: left;
-         }
-         .ing {
-            font-size: 30px;
-            text-decoration: none !important;
-         }
-         .question-toggle {
-            cursor: pointer;
-         }
-         #faqAccordion h5 {
-            font-weight: bold;
-            font-size: 25px;
-            margin-bottom: 25px;
-         }
-         .panel-body {
-            font-size: 20px;
-         }
-         .panel-default > .panel-heading {
-            color: #333;
-            background-color: #ffd550;
-            border: #fff solid 1px;
-         }
-         #listfaq {
-            max-width: 500px;
-            text-align: left;
-            margin: 0 auto;
-         }
-         #listfaq li {
-            margin-bottom: 10px;
-         }
-         #faqAccordion .caret {
-            border-left: 8px solid transparent;
-            border-right: 8px solid transparent;
-            border-top: 8px solid #000000;
-            float: right;
-            margin-top: 15px;
-         }
-      </style>
    </head>
 
    <body class="siskofrontend">
@@ -448,10 +339,10 @@
             </div>
 
             <div class="col-md-3 col-sm-6 col-xs-12" style="padding-top: 20px">
-               <div class="fiture-box-up">
+               <div class="fiture-box-up" style="display: flex; flex-direction: column; justify-content: end">
                   <div class="col-xs-12 text-center image_depan" align="center">
                      <a href="https://sistemtoko.com/#website">
-                        <img src="assets/images/fitur-6.png" class="img-responsive" alt="modul Sistemtoko" />
+                        <img src="assets/images/fitur-6.png" style="min-width: 250px" class="img-responsive" alt="modul Sistemtoko" />
                      </a>
                   </div>
                   <div class="col-xs-12" align="center" style="height: 150px; margin-top: 16px">
@@ -813,28 +704,75 @@
             </div>
          </div>
       </section>
-      <div class="row penjelasan" id="other fiture">
-         <div class="container" id="list-fitur" style="padding: 20px 0 30px 0">
-            <div class="row" id="fiture-row">
-               <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
-                  <h3 class="header-gray ex-feature-title">Android Hijja</h3>
-                  <a href="https://play.google.com/store/apps/details?id=com.sistemtoko.hijja&amp;hl=en" target="_blank">
-                     <img src="assets/images/android-hijja.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
-                  </a>
-               </div>
+      <div class="row penjelasan" id="other fiture" style="max-width: 1280px; margin: auto">
+         <div class="container-fluid" id="list-fitur" style="padding: 20px 0 30px 0">
+            <div align="center" class="container-fluid">
+               <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Carousel slides -->
+                  <div class="carousel-inner">
+                     <div class="row item active" id="fiture-row" alt="Slide 1">
+                        <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                           <h3 class="header-gray ex-feature-title" style="bottom: 32px">Custom Logo</h3>
+                           <p class="ex-feature-title" style="bottom: 8px; font-size: 14px; font-weight: 400">By Mark Zukerberg</p>
+                           <a href="https://play.google.com/store/apps/details?id=com.sistemtoko.hijja&amp;hl=en" target="_blank">
+                              <div class="background-img-logo"></div>
+                              <!-- <img src="assets/images/design-logo1.png" class="img-responsive fiture-img img-transparent" style="border-radius: 0" alt="Sistemtoko" /> -->
+                           </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                           <h3 class="header-gray ex-feature-title" style="bottom: 32px">Custom Logo</h3>
+                           <p class="ex-feature-title" style="bottom: 8px; font-size: 14px; font-weight: 400">By Mark Zukerberg</p>
+                           <a href="https://play.google.com/store/apps/details?id=com.sistemtoko.hijja&amp;hl=en" target="_blank">
+                              <div class="background-img-logo"></div>
+                              <!-- <img src="assets/images/design-logo1.png" class="img-responsive fiture-img img-transparent" style="border-radius: 0" alt="Sistemtoko" /> -->
+                           </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                           <h3 class="header-gray ex-feature-title" style="bottom: 32px">Custom Logo</h3>
+                           <p class="ex-feature-title" style="bottom: 8px; font-size: 14px; font-weight: 400">By Mark Zukerberg</p>
+                           <a href="https://play.google.com/store/apps/details?id=com.sistemtoko.hijja&amp;hl=en" target="_blank">
+                              <div class="background-img-logo"></div>
+                              <!-- <img src="assets/images/design-logo1.png" class="img-responsive fiture-img img-transparent" style="border-radius: 0" alt="Sistemtoko" /> -->
+                           </a>
+                        </div>
+                     </div>
 
-               <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
-                  <h3 class="header-gray ex-feature-title">Android Gamis</h3>
-                  <a href="https://play.google.com/store/apps/details?id=com.sistemtoko.grosirgamissurabaya&amp;hl=en" target="_blank">
-                     <img src="assets/images/logo-gamis.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
-                  </a>
-               </div>
+                     <div class="row item" id="fiture-row" alt="Slide 2">
+                        <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                           <h3 class="header-gray ex-feature-title" style="bottom: 32px">Custom Logo</h3>
+                           <p class="ex-feature-title" style="bottom: 8px; font-size: 14px; font-weight: 400">By Mark Zukerberg</p>
+                           <a href="https://play.google.com/store/apps/details?id=com.sistemtoko.hijja&amp;hl=en" target="_blank">
+                              <div class="background-img-logo"></div>
+                              <!-- <img src="assets/images/design-logo1.png" class="img-responsive fiture-img img-transparent" style="border-radius: 0" alt="Sistemtoko" /> -->
+                           </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                           <h3 class="header-gray ex-feature-title" style="bottom: 32px">Custom Logo</h3>
+                           <p class="ex-feature-title" style="bottom: 8px; font-size: 14px; font-weight: 400">By Mark Zukerberg</p>
+                           <a href="https://play.google.com/store/apps/details?id=com.sistemtoko.hijja&amp;hl=en" target="_blank">
+                              <div class="background-img-logo"></div>
+                              <!-- <img src="assets/images/design-logo1.png" class="img-responsive fiture-img img-transparent" style="border-radius: 0" alt="Sistemtoko" /> -->
+                           </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
+                           <h3 class="header-gray ex-feature-title" style="bottom: 32px">Custom Logo</h3>
+                           <p class="ex-feature-title" style="bottom: 8px; font-size: 14px; font-weight: 400">By Mark Zukerberg</p>
+                           <a href="https://play.google.com/store/apps/details?id=com.sistemtoko.hijja&amp;hl=en" target="_blank">
+                              <div class="background-img-logo"></div>
+                              <!-- <img src="assets/images/design-logo1.png" class="img-responsive fiture-img img-transparent" style="border-radius: 0" alt="Sistemtoko" /> -->
+                           </a>
+                        </div>
+                     </div>
+                     <!-- Add more slides as needed -->
+                  </div>
 
-               <div class="col-md-4 col-sm-6 fiture-box hovered-wrapper">
-                  <h3 class="header-gray ex-feature-title">Android Nooraia</h3>
-                  <a href="https://play.google.com/store/apps/details?id=com.sistemtoko.nooraia&amp;hl=en" target="_blank">
-                     <img src="assets/images/android-nooraia.jpg" class="img-responsive fiture-img img-transparent" alt="Sistemtoko" />
-                  </a>
+                  <p>Lihat Selengkapnya</p>
+                  <!-- Carousel Indicators -->
+                  <ol class="carousel-indicators">
+                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                     <li data-target="#myCarousel" data-slide-to="1"></li>
+                     <!-- Add more indicators as needed -->
+                  </ol>
                </div>
             </div>
          </div>
@@ -863,49 +801,49 @@
 
                <div class="col-md-12 fiture-box" style="padding: 5px 0 0 0 !important" id="facebook">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" /> Cek Stock</div>
+                     <div class="fiture-list-chatbot" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" /> Cek Stock</div>
                   </div>
                   <div style="clear: both"></div>
                </div>
 
                <div class="col-md-12 fiture-box" style="padding: 5px 0 0 0 !important" id="facebook">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" /> Order</div>
+                     <div class="fiture-list-chatbot" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" /> Order</div>
                   </div>
                   <div style="clear: both"></div>
                </div>
 
                <div class="col-md-12 fiture-box" style="padding: 5px 0 0 0 !important" id="facebook">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" /> Cek Order</div>
+                     <div class="fiture-list-chatbot" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" /> Cek Order</div>
                   </div>
                   <div style="clear: both"></div>
                </div>
 
                <div class="col-md-12 fiture-box" style="padding: 5px 0 0 0 !important" id="facebook">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" />Cek Pembayaran</div>
+                     <div class="fiture-list-chatbot" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" />Cek Pembayaran</div>
                   </div>
                   <div style="clear: both"></div>
                </div>
 
                <div class="col-md-12 fiture-box" style="padding: 5px 0 0 0 !important" id="facebook">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" /> Pembayaran</div>
+                     <div class="fiture-list-chatbot" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" /> Pembayaran</div>
                   </div>
                   <div style="clear: both"></div>
                </div>
 
                <div class="col-md-12 fiture-box" style="padding: 5px 0 0 0 !important" id="facebook">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" />Tanya CS</div>
+                     <div class="fiture-list-chatbot" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" />Tanya CS</div>
                   </div>
                   <div style="clear: both"></div>
                </div>
 
                <div class="col-md-12 fiture-box" style="padding: 5px 0 0 0 !important" id="facebook">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                     <div class="fiture-header" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" /> Minta Resi</div>
+                     <div class="fiture-list-chatbot" style="margin: 8px 0"><img src="assets/icons/checklist.svg" style="margin-right: 12px" alt="checklist" /> Minta Resi</div>
                   </div>
                   <div style="clear: both"></div>
                </div>
@@ -999,7 +937,7 @@
 
       <!-- BACA JUGA -->
       <section style="max-width: 1280px; margin: auto; padding: 0 16px 0 16px">
-         <div style="font-size: 40px; font-weight: bold; text-align: center; margin-bottom: 20px">Baca Juga</div>
+         <h2 style="font-size: 40px; font-weight: bold; color: #212121; text-align: center; margin-bottom: 20px">Baca Juga</h2>
          <div class="panel-group" id="faqAccordion">
             <div class="panel panel-default panel-header">
                <div class="panel-heading accordion-toggle question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question3" id="fitur" aria-expanded="true">
@@ -1007,7 +945,7 @@
                      <a class="ing">List Fitur<b class="caret"></b></a>
                   </h4>
                </div>
-               <div id="question3" class="panel-collapse collapse in" aria-expanded="true">
+               <div id="question3" class="panel-collapse collapse" aria-expanded="true">
                   <div class="panel-body">
                      <div class="col-md-4">
                         <ul style="padding: 0 10px; list-style-type: none">
@@ -1078,13 +1016,13 @@
                         Chatbot adalah aplikasi chat yang dapat secara otomatis membalas pesan dari customer. Dengan memiliki aplikasi ini Customer Service anda akan semakin mudah karena chatbot dapat menjawab secara otomatis pertanyaan - pertanyaan yang sering di tanyakan oleh customer, seperti :
                         <br /><br />
                      </p>
-                     <ul id="listfaq">
-                        <li>Cek Stock</li>
-                        <li>Order Barang</li>
-                        <li>Cek Status Order</li>
-                        <li>Cek Status Pembayaran</li>
-                        <li>Melakukan Konfirmasi Pembayaran</li>
-                        <li>Minta Resi</li>
+                     <ul id="listfaq" style="list-style-type: none; margin-left: 0">
+                        <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />Cek Stock</li>
+                        <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />Order Barang</li>
+                        <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />Cek Status Order</li>
+                        <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />Cek Status Pembayaran</li>
+                        <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />Melakukan Konfirmasi Pembayaran</li>
+                        <li><img src="assets/icons/checklist.svg" alt="checklist" style="margin-right: 12px; width: 16px" />Minta Resi</li>
                      </ul>
                      <br />
                      Dengan demikian toko kamu dapat <b style="color: red">melayani customer 24jam non stop dengan respon time hitungan detik</b>
@@ -1095,182 +1033,198 @@
          </div>
       </section>
 
-      <style type="text/css">
-         .soon {
-            padding: 12px;
-            font-size: 12px;
-            color: #a9a9a9;
-            line-height: 10px;
-         }
-         #pricing {
-            padding-top: 45px;
-         }
-      </style>
-      <div class="row quote" id="pricing">
-         <div style="background: url(https://sistemtoko.com/img/bg-pricing.png) top no-repeat">
-            <div class="container">
-               <div class="col-md-12" style="padding: 30px 0; text-align: center">
-                  <h2>Pricing</h2>
+      <!-- PERBANDINGAN HARGA -->
+      <section class="row quote" id="pricing" style="padding-top: 80px; max-width: 1280px; margin: auto">
+         <div class="container-fluid">
+            <h2 style="font-size: 40px; font-weight: bold; color: #212121; text-align: center; margin-bottom: 48px">Perbandingan Harga</h2>
+            <div style="clear: both"></div>
+            <div class="box_pricing">
+               <div class="col-md-4 hidden-xs col-sm-4">
+                  <div class="hidden-xs" style="min-height: 80px" align="center"></div>
+                  <ul style="margin: 0; padding: 0 0 0 20px" class="info_pricing">
+                     <li>Konsultasi</li>
+                     <li>Pelatihan</li>
+                     <li>Website</li>
+                     <li>Jumlah Invoice</li>
+                     <li>Android Apps</li>
+                     <li>Chatbot</li>
+                     <li>Aplikasi Kasir</li>
+                     <li>Free Customize Logo</li>
+                     <li>Free Customize Website</li>
+                     <li>Terintegrasi Shopee</li>
+                     <li>Total Harga</li>
+                  </ul>
                </div>
 
-               <div style="clear: both"></div>
-               <div class="box_pricing">
-                  <div class="col-md-2 hidden-xs col-sm-4">
-                     <div class="hidden-xs" style="min-height: 230px" align="center"></div>
-                     <style type="text/css">
-                        ul.info_pricing li {
-                           font-weight: 500 !important;
-                        }
-                     </style>
-
-                     <ul style="margin: 0; padding: 0 0 0 20px" class="info_pricing">
-                        <li>Konsultasi</li>
-                        <li>Website</li>
-                        <li>Jumlah Invoice</li>
-                        <li>Android Apps</li>
-                        <li>Chat Bot</li>
-                        <li>Aplikasi Kasir</li>
-                     </ul>
-                  </div>
-
-                  <div class="col-md-3 col-sm-4" align="center">
-                     <img src="assets/images/otoped.jpg" alt="Sistemtoko" class="" style="margin-top: 20px" />
-                     <h2 style="font-weight: bold; color: #427b9f">Free</h2>
-                     <ul style="margin: 20px 0 0 0; padding: 0; text-align: center">
-                        <li>
-                           <div class="label_price visible-xs">Konsultasi</div>
-                           -
-                        </li>
-                        <li>
-                           <div class="label_price visible-xs">Website</div>
-                           Subdomain
-                        </li>
-                        <li>
-                           <div class="label_price visible-xs">Jumlah Invoice</div>
-                           Limited
-                        </li>
-                        <!-- <li><div class="label_price visible-xs">Storage</div> 200mb</li> -->
-                        <li>
-                           <div class="label_price visible-xs">Android Apps</div>
-                           -
-                        </li>
-                        <li>
-                           <div class="label_price visible-xs">Chat bot</div>
-                           free
-                        </li>
-                        <li>
-                           <div class="label_price visible-xs">Aplikasi Kasir</div>
-                           free
-                        </li>
-                     </ul>
-                     <table align="center" style="margin-top: 35px">
-                        <tbody>
-                           <tr>
-                              <td align="left">Rp</td>
-                           </tr>
-                           <tr>
-                              <td style="font-size: 50px; font-weight: bold; color: #427b9f; line-height: 1; letter-spacing: -3px">Free</td>
-                           </tr>
-                           <tr>
-                              <td align="right">/ Tahun</td>
-                           </tr>
-                           <!-- <tr><td align="right" style="font-size: 12px">* Min Order 12 bulan</td></tr> -->
-                        </tbody>
-                     </table>
-                     <!-- img src="https://sistemtoko.com/img/frontend/daftar.jpg" onclick="toRegister(3)" style="cursor: pointer;margin-top: 20px"/> -->
-                     <div style="margin-bottom: 15px; text-align: center" class="text-center">
-                        <a href="https://sistemtoko.com/register" class="btn btn-lg signup"> Daftar </a>
-                        <br />
-                     </div>
-                     <hr class="visible-xs" />
-                  </div>
-
-                  <div class="col-md-3 col-sm-4" align="center">
-                     <img src="assets/images/motor.jpg" alt="Sistemtoko" class="" style="margin-top: 20px" />
-                     <h2 style="font-weight: bold; color: #427b9f">Platinum</h2>
-                     <ul style="margin: 20px 0 0 0; padding: 0; text-align: center">
-                        <li>
-                           <div class="label_price visible-xs">Konsultasi</div>
-                           Coaching
-                        </li>
-                        <li>
-                           <div class="label_price visible-xs">Website</div>
-                           1 Domain (.com)
-                        </li>
-                        <li>
-                           <div class="label_price visible-xs">Jumlah Invoice</div>
-                           Unlimited
-                        </li>
-                        <!-- <li><div class="label_price visible-xs">Storage</div> 200mb</li> -->
-                        <li>
-                           <div class="label_price visible-xs">Android Apps</div>
-
-                           1 App free
-                        </li>
-                        <li>
-                           <div class="label_price visible-xs">Chat bot</div>
-                           free
-                        </li>
-                        <li>
-                           <div class="label_price visible-xs">Aplikasi Kasir</div>
-                           free
-                        </li>
-                     </ul>
-                     <table align="center" style="margin-top: 35px">
-                        <tbody>
-                           <tr>
-                              <td align="left">Rp</td>
-                           </tr>
-                           <tr>
-                              <td style="font-size: 50px; font-weight: bold; color: #427b9f; line-height: 1; letter-spacing: -3px">2,000,000</td>
-                           </tr>
-                           <tr>
-                              <td align="right">/ Tahun</td>
-                           </tr>
-                           <!-- <tr><td align="right" style="font-size: 12px">* Min Order 12 bulan</td></tr> -->
-                        </tbody>
-                     </table>
-                     <!-- img src="https://sistemtoko.com/img/frontend/daftar.jpg" onclick="toRegister(3)" style="cursor: pointer;margin-top: 20px"/> -->
-                     <div style="margin-bottom: 15px; text-align: center" class="text-center">
-                        <a href="https://sistemtoko.com/register" class="btn btn-lg signup"> Daftar </a>
-                        <br />
-                     </div>
-                     <hr class="visible-xs" />
-                  </div>
-
-                  <div class="col-md-4 col-sm-4" align="center">
-                     <img src="assets/images/rocket.jpg" class="" style="margin-top: 20px" alt="Sistemtoko" />
-                     <h2 style="font-weight: bold; color: #427b9f">Corporate</h2>
-                     <ul style="margin: 20px 0 0 0; padding: 0; text-align: center">
-                        <li style="line-height: 2; text-align: justify; padding: 0 35px">
-                           <div align="center">
-                              <img src="assets/images/shopee.png" style="max-width: 50%" /><br />
-                              Terintegrasi dengan Shopee
-                           </div>
-
-                           <div style="margin-top: 20px">paket corporate ini adalah paket dimana user dapat melakukan full customize sistem , customize template website , dengan menggunakan server terpisah.</div>
-                        </li>
-                     </ul>
-                     <table align="center" style="margin-top: 35px">
-                        <tbody>
-                           <tr>
-                              <td style="color: #427b9f">
-                                 <a href="https://api.whatsapp.com/send?phone=6289695101205&amp;text=halo%20Sistemtoko!" class="btn btn-lg signup"> Contact us </a>
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-
-                     <hr class="visible-xs" />
-                  </div>
-
-                  <div style="clear: both; height: 50px"></div>
+               <div class="col-md-2 col-sm-4" align="center">
+                  <h2 style="font-weight: bold; color: #427b9f">Free</h2>
+                  <ul style="margin: 20px 0 0 0; padding: 0; text-align: center">
+                     <li>
+                        <div class="label_price visible-xs">Konsultasi</div>
+                        <img src="assets/icons/checkmark.svg" alt="checklist" style="width: 40px" />
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Pelatihan</div>
+                        <img src="assets/icons/checkmark.svg" alt="checklist" style="width: 40px" />
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Website</div>
+                        Subdomain
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Jumlah Invoice</div>
+                        Limited
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Android Apps</div>
+                        -
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Chat bot</div>
+                        <img src="assets/icons/checkmark.svg" alt="checklist" style="width: 40px" />
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Aplikasi Kasir</div>
+                        <img src="assets/icons/checkmark.svg" alt="checklist" style="width: 40px" />
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Free Customize Logo</div>
+                        -
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Free Customize Website</div>
+                        -
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Terintegrasi Shopee</div>
+                        -
+                     </li>
+                  </ul>
+                  <table align="center" style="margin-top: 35px">
+                     <tbody>
+                        <tr>
+                           <td style="color: black">Free</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <hr class="visible-xs" />
                </div>
+
+               <div class="col-md-3 col-sm-4" align="center" style="background-color: rgba(255, 206, 79, 0.4)">
+                  <h2 style="font-weight: bold; color: #427b9f">Platinum</h2>
+                  <ul style="margin: 20px 0 0 0; padding: 0; text-align: center">
+                     <li>
+                        <div class="label_price visible-xs">Konsultasi</div>
+                        <img src="assets/icons/checkmark.svg" alt="checklist" style="width: 40px" />
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Pelatihan</div>
+                        <img src="assets/icons/checkmark.svg" alt="checklist" style="width: 40px" />
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Website</div>
+                        Subdomain
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Jumlah Invoice</div>
+                        Limited
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Android Apps</div>
+                        -
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Chat bot</div>
+                        <img src="assets/icons/checkmark.svg" alt="checklist" style="width: 40px" />
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Aplikasi Kasir</div>
+                        <img src="assets/icons/checkmark.svg" alt="checklist" style="width: 40px" />
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Free Customize Logo</div>
+                        -
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Free Customize Website</div>
+                        -
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Terintegrasi Shopee</div>
+                        -
+                     </li>
+                  </ul>
+                  <table align="center" style="margin-top: 35px">
+                     <tbody>
+                        <tr>
+                           <td style="color: black">2jt</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <hr class="visible-xs" />
+               </div>
+
+               <div class="col-md-3 col-sm-4" align="center">
+                  <h2 style="font-weight: bold; color: #427b9f">Corporate</h2>
+                  <ul style="margin: 20px 0 0 0; padding: 0; text-align: center">
+                     <li>
+                        <div class="label_price visible-xs">Konsultasi</div>
+                        <img src="assets/icons/checkmark.svg" alt="checklist" style="width: 40px" />
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Pelatihan</div>
+                        <img src="assets/icons/checkmark.svg" alt="checklist" style="width: 40px" />
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Website</div>
+                        Subdomain
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Jumlah Invoice</div>
+                        Limited
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Android Apps</div>
+                        -
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Chat bot</div>
+                        <img src="assets/icons/checkmark.svg" alt="checklist" style="width: 40px" />
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Aplikasi Kasir</div>
+                        <img src="assets/icons/checkmark.svg" alt="checklist" style="width: 40px" />
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Free Customize Logo</div>
+                        -
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Free Customize Website</div>
+                        -
+                     </li>
+                     <li>
+                        <div class="label_price visible-xs">Terintegrasi Shopee</div>
+                        -
+                     </li>
+                  </ul>
+                  <table align="center" style="margin-top: 35px">
+                     <tbody>
+                        <tr>
+                           <td style="color: black">3jt</td>
+                        </tr>
+                     </tbody>
+                  </table>
+
+                  <hr class="visible-xs" />
+               </div>
+
+               <div style="clear: both; height: 50px"></div>
             </div>
          </div>
-      </div>
+      </section>
 
-      <!-- Fitur   -->
+      <!-- FITURE   -->
       <div class="row footer" id="footer">
          <div class="container">
             <div class="col-md-4">

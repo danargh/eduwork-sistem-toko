@@ -1,24 +1,126 @@
-@font-face {
+body {
    font-family: 'Poppins', sans-serif;
-   src: url(../fonts/sofia/fe5a3dd2a3c739215ce0f377c87a0f75.eot);
-   src: url(../fonts/sofia/fe5a3dd2a3c739215ce0f377c87a0f75.eot?#iefix) format('embedded-opentype'), url(../fonts/sofia/fe5a3dd2a3c739215ce0f377c87a0f75.woff) format('woff'), url(../fonts/sofia/fe5a3dd2a3c739215ce0f377c87a0f75.ttf) format('truetype'),
-      url(../fonts/sofia/fe5a3dd2a3c739215ce0f377c87a0f75.svg#oxygen-light) format('svg');
    font-weight: 400;
    font-style: normal;
 }
 
-@font-face {
-   font-family: linotte;
-   src: url(../fonts/linotte/linotte_regular-webfont.woff2) format('woff2'), url(../fonts/linotte/linotte_regular-webfont.woff) format('woff');
-   font-weight: 400;
-   font-style: normal;
+.link-style {
+   cursor: pointer;
 }
 
-@font-face {
-   font-family: bariol_boldbold;
-   src: url(../fonts/bariol/bariol_bold-webfont.woff2) format('woff2'), url(../fonts/bariol/bariol_bold-webfont.woff) format('woff');
-   font-weight: 400;
-   font-style: normal;
+@media (max-width: 767px) {
+   .fix_menu {
+      left: auto;
+   }
+}
+
+.fix_menu {
+   position: fixed;
+   z-index: 99999999999999;
+   background: #1aa8f8;
+   width: calc(100%);
+   left: 0;
+   border-radius: 0;
+   transition: top 0s ease-in-out;
+}
+
+/* code for animated blinking cursor */
+.typed-cursor {
+   opacity: 1;
+   -webkit-animation: blink 0.7s infinite;
+   -moz-animation: blink 0.7s infinite;
+   animation: blink 0.7s infinite;
+}
+@keyframes blink {
+   0% {
+      opacity: 1;
+   }
+   50% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+@-webkit-keyframes blink {
+   0% {
+      opacity: 1;
+   }
+   50% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+@-moz-keyframes blink {
+   0% {
+      opacity: 1;
+   }
+   50% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+.coverbackground {
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover !important;
+}
+
+#faqAccordion {
+   text-align: left;
+}
+.ing {
+   font-size: 30px;
+   text-decoration: none !important;
+}
+.question-toggle {
+   cursor: pointer;
+}
+#faqAccordion h5 {
+   font-weight: bold;
+   font-size: 25px;
+   margin-bottom: 25px;
+}
+.panel-body {
+   font-size: 20px;
+}
+.panel-default > .panel-heading {
+   color: #333;
+   background-color: #ffd550;
+   border: #fff solid 1px;
+}
+#listfaq {
+   max-width: 500px;
+   text-align: left;
+   margin: 0 auto;
+}
+#listfaq li {
+   margin-bottom: 10px;
+}
+#faqAccordion .caret {
+   border-left: 8px solid transparent;
+   border-right: 8px solid transparent;
+   border-top: 8px solid #000000;
+   float: right;
+   margin-top: 15px;
+}
+.soon {
+   padding: 12px;
+   font-size: 12px;
+   color: #a9a9a9;
+   line-height: 10px;
+}
+#pricing {
+   padding-top: 45px;
+}
+ul.info_pricing li {
+   font-weight: 500 !important;
 }
 
 .btn {
@@ -80,8 +182,7 @@ body {
    background: #fff;
 }
 
-#penjelasan-1,
-.quote {
+#penjelasan-1 {
    background: #1aa8f8;
 }
 
@@ -350,6 +451,12 @@ body {
    color: #484848;
 }
 
+.fiture-list-chatbot {
+   font-size: 20px;
+   font-weight: 500;
+   color: #404040;
+}
+
 .img-fiture {
    margin-top: 10px;
    text-align: center;
@@ -454,7 +561,7 @@ body {
 
 @media (max-width: 768px) {
    .fiture-box-up {
-      height: 600px;
+      height: 700px;
    }
 }
 
@@ -571,7 +678,7 @@ a.navbar-brand:hover {
 }
 
 .header-gray {
-   color: #4a4a4a;
+   color: #000000;
 }
 
 .img-transparent {
@@ -588,6 +695,29 @@ a.navbar-brand:hover {
    color: #fff;
    opacity: 0;
    transition: opacity 0.3s ease-in-out;
+}
+
+.background-img-logo {
+   background-image: url('../assets/images/design-logo1.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   min-width: 400px;
+   min-height: 400px;
+}
+
+.background-img-logo:before {
+   content: '';
+   display: block;
+   position: absolute;
+   height: 0%;
+   width: 100%;
+   bottom: 0;
+   transition: height 0.5s ease-out;
+   background: linear-gradient(180deg, rgba(48, 48, 48, 0) 0%, #303030 100%);
+}
+.background-img-logo:hover:before {
+   height: 100%;
 }
 
 .hovered-wrapper:hover .img-transparent {
@@ -627,36 +757,52 @@ a.navbar-brand:hover {
    }
 }
 
-#pricing {
-   background: #fece66;
-   background: -moz-linear-gradient(top, #fece66 0, #fece66 60%, #f8f7f5 60%, #f8f7f5 100%);
-   background: -webkit-gradient(left top, left bottom, color-stop(0, #fece66), color-stop(60%, #fece66), color-stop(60%, #f8f7f5), color-stop(100%, #f8f7f5));
-   background: -webkit-linear-gradient(top, #fece66 0, #fece66 60%, #f8f7f5 60%, #f8f7f5 100%);
-   background: -o-linear-gradient(top, #fece66 0, #fece66 60%, #f8f7f5 60%, #f8f7f5 100%);
-   background: -ms-linear-gradient(top, #fece66 0, #fece66 60%, #f8f7f5 60%, #f8f7f5 100%);
-   background: linear-gradient(to bottom, #fece66 0, #fece66 60%, #f8f7f5 60%, #f8f7f5 100%);
-   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fece66', endColorstr='#f8f7f5', GradientType=0);
-   color: #69511c;
-}
-
 .box_pricing {
-   background: #fdfbf4;
+   background: #ffff;
    border-radius: 20px;
    min-height: 800px;
-   -webkit-box-shadow: 0 0 13px -2px rgba(0, 0, 0, 0.75);
-   -moz-box-shadow: 0 0 13px -2px rgba(0, 0, 0, 0.75);
-   box-shadow: 0 0 13px -2px rgba(0, 0, 0, 0.75);
    margin-bottom: 50px;
    padding-top: 30px;
+   filter: drop-shadow(7.802226543426514px 7.802226543426514px 62.41781234741211px rgba(0, 0, 0, 0.1));
 }
 
 #pricing ul li {
-   font-family: 'segoe ui';
    list-style: none;
    line-height: 3.5;
    color: #2b2b2b;
    font-weight: 400;
    margin: 0;
    padding: 0;
-   font-size: 15px;
+   font-size: 22px;
+   font-weight: 400;
+}
+
+.carousel-indicators {
+   position: absolute;
+   bottom: -80px;
+   left: 50%;
+   transform: translateX(-50%);
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   display: flex;
+   justify-content: center;
+}
+
+.carousel-indicators li {
+   width: 16px; /* Set the width of each indicator */
+   height: 16px; /* Set the height of each indicator */
+   border-radius: 50%; /* Make them circular */
+   background-color: #888; /* Set the color of inactive indicators */
+   cursor: pointer;
+   margin: 2px;
+   transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.carousel-indicators .active {
+   background-color: #3f85ec; /* Set the color of the active indicator */
+   margin: 2px;
+   /* Adjust spacing between indicators */
+   width: 16px;
+   height: 16px;
 }
