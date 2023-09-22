@@ -698,7 +698,6 @@ a.navbar-brand:hover {
 }
 
 .background-img-logo {
-   background-image: url('../assets/images/design-logo1.png');
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -710,8 +709,8 @@ a.navbar-brand:hover {
    content: '';
    display: block;
    position: absolute;
-   height: 0%;
-   width: 100%;
+   height: 0;
+   width: 98%;
    bottom: 0;
    transition: height 0.5s ease-out;
    background: linear-gradient(180deg, rgba(48, 48, 48, 0) 0%, #303030 100%);
@@ -790,8 +789,8 @@ a.navbar-brand:hover {
 }
 
 .carousel-indicators li {
-   width: 16px; /* Set the width of each indicator */
-   height: 16px; /* Set the height of each indicator */
+   width: 20px; /* Set the width of each indicator */
+   height: 20px; /* Set the height of each indicator */
    border-radius: 50%; /* Make them circular */
    background-color: #888; /* Set the color of inactive indicators */
    cursor: pointer;
@@ -803,6 +802,30 @@ a.navbar-brand:hover {
    background-color: #3f85ec; /* Set the color of the active indicator */
    margin: 2px;
    /* Adjust spacing between indicators */
-   width: 16px;
-   height: 16px;
+   width: 20px;
+   height: 20px;
+}
+
+.left-arrow-logo {
+   position: absolute;
+   top: 47%;
+}
+
+.right-arrow-logo {
+   position: absolute;
+   top: 47%;
+   left: 86%;
+}
+
+.background-blue {
+   background: linear-gradient(97deg, #15a3f1 22.14%, #00a4fe 106.45%);
+}
+
+.background-city {
+   background-image: url('../assets/images/bg-city.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   width: 100%;
+   height: 100%;
 }
