@@ -576,6 +576,12 @@ body {
    }
 }
 
+@media (max-width: 460px) {
+   .fiture-box-up {
+      height: 400px;
+   }
+}
+
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover {
@@ -640,6 +646,25 @@ a.navbar-brand:hover {
    text-align: center;
    font-size: 14px;
    color: #696969;
+}
+
+.fitur-other-padding-left {
+   padding-left: 90px;
+}
+
+.fitur-other-padding-right {
+   padding-right: 90px;
+}
+
+@media screen and (max-width: 768px) {
+   .fitur-other-padding-left {
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+   .fitur-other-padding-right {
+      padding-left: 20px;
+      padding-right: 20px;
+   }
 }
 
 .footer-menu li {
