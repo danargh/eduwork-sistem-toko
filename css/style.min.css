@@ -888,7 +888,7 @@ a.navbar-brand:hover {
 .background-city {
    background-image: url('../assets/images/bg-city.png');
    background-repeat: no-repeat;
-   background-position: center;
+   background-position: center bottom;
    background-size: contain;
    width: 100%;
    height: 100%;
